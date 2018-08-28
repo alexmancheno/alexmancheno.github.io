@@ -8,7 +8,7 @@
 ```
 3. Create the following folder:
 ```
-> mkdir lab01
+> mkdir lab02
 ```
 Then cd into that folder.
 4. Create the following folder structure:

@@ -22,9 +22,11 @@ You can create the above folder structure by typing in the following three comma
 ```
 > mkdir src
 > mkdir bin
-> echo $null >> src/HelloWorld.java
+> New-Item -Name "src/HelloWorld.java" -ItemType "file"
 ```
-5. Open `HelloWorld.java` with a text editor of your choice. Notepad++ is recommended, or you can try downloading one like [Visual Studio Code](https://code.visualstudio.com/download) (my go-to text editor). Place the following in `HelloWorld.java`:
+5. Open Notepad++ (not regular Notepad). You can find it by searching for it in the search-bar on the bottom left corner of your screen. In Notepad++, on the top-left corner click on File -> Open Folder as Workspace. Find `lab02` inside your `H:\` drive, select it, and click Open. Notice that you see the project directory of `lab02` on the left side of Notepad++. The project directory view will change as you add, delete, or modify files in the folder you have open as your workspace.
+
+6. Select `HelloWorld.java` (under `src`) and place the following inside:
 
 ```
 public class HelloWorld
@@ -35,8 +37,11 @@ public class HelloWorld
     }
 }
 ```
-6. Compile the program by typing in the following command into PowerShell:
+Make sure to save your file! 
 
+Note: you can save all files with `Ctrl + Shift + S`.
+
+6. Compile the program by typing in the following command into PowerShell:
 ```
 > javac src/*.java -d bin
 ```

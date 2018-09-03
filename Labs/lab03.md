@@ -23,28 +23,29 @@ You can do so by typing in the following into the PowerShell:
 ```
 > cd lab03
 ```
+4. Open `lab03` with Notepad++ by clicking on the top left corner: File -> Open Folder as Workspace, and then find `lab03` in your `H:\` drive.  
 
-4. *Declare* two local variables inside the *main* method of type *float* called `fahrenheit` and `centigrade`.
+5. *Declare* two local variables inside the *main* method of type *float* called `fahrenheit` and `centigrade`.
 
-5. *Initialize* `fahrenheit` to 98.6
+6. *Initialize* `fahrenheit` to 98.6
 
-6. Create a *static* method that converts degrees in `fahrenheit` to `centigrade`. The formula to do so is:
+7. Create a *static* method that converts degrees in `fahrenheit` to `centigrade`. The formula to do so is:
     c = 5/9 (f - 32)
 
-7. Use your static method to give your `centigrade` variable the result of converting your `fahrenheit` variable.
+8. Use your static method to give your `centigrade` variable the result of converting your `fahrenheit` variable.
 
-8. Use a *for* loop to convert numbers 0.0, 5.0, 10.0, 15.0, ..., 40.0 to centigrade and print to the console.
+9. Use a *for* loop to convert numbers 0.0, 5.0, 10.0, 15.0, ..., 40.0 to centigrade and print to the console.
 
-9. Use a *while* loop to get the same output as part 8.
+10. Use a *while* loop to get the same output as part 8.
 
-10. Compile your program:
+11. Compile your program:
 ```
 > javac src/*.java -d bin
 ```
 
-11. Run your program:
+12. Run your program:
 ```
 > java -cp bin Main
 ```
 
-12. **Bonus:** write a method to convert `centigrade` to `fahrenheit`.
+13. **Bonus:** write a method to convert `centigrade` to `fahrenheit`.

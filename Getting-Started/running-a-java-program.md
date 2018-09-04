@@ -66,7 +66,7 @@ public class Main
 
         String name = "Alex";
         String getGreeting = Library.returnGreeting(name);
-        System.out.printf("Result of Library.getGreeting("Alex"): %s %n", getGreeting);
+        System.out.printf("Result of Library.getGreeting(\"Alex\"): %s %n", getGreeting);
     }
 }
 ```

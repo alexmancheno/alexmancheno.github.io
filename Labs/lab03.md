@@ -36,7 +36,7 @@ You can do so by typing in the following into the PowerShell:
 
 9. Use a *for* loop to convert numbers 0.0, 5.0, 10.0, 15.0, ..., 40.0 to centigrade and print to the console.
 
-10. Use a *while* loop to get the same output as part 8.
+10. Use a *while* loop to get the same output as part 9.
 
 11. Compile your program:
 ```

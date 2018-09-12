@@ -11,3 +11,4 @@
   * [02](Labs/lab02.md)
   * [03](Labs/lab03.md)
   * [04](Labs/lab04.md)
+  * [05](Labs/lab05.md)

@@ -11,9 +11,7 @@ lab05
 └── bin
 ├── lab05_input.txt
 ```
-
 You can do so by typing in the following into the PowerShell:
-
 ```
 > mkdir lab05
 > mkdir lab05/src
@@ -26,7 +24,7 @@ You can do so by typing in the following into the PowerShell:
 
 4. Open `lab05` as part of your workspace with Notepad++. Place the following in `Main.java`:
 
-```
+    ```
     import javax.swing.*;
 
     public class Main 
@@ -65,8 +63,7 @@ You can do so by typing in the following into the PowerShell:
             // TODO
         } 
     }
-
-```
+    ```
 Place the following in `lab05_input.txt`:
 ```
 hello
@@ -78,7 +75,6 @@ green
 sun
 moon
 ```
-
 You can get the code for `TextFileInput.java` from either BlackBoard or <a href="/Misc/TextFileInput.java" target="_blank">here</a>.
 
 5. Fill in the `inputFromFile` method so that it returns a *String* array of the words from the input file.

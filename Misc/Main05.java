@@ -3,7 +3,8 @@ import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Main05 {
+public class Main05 
+{
     public static void main(String[] args) 
     {
         // Declare our variables
@@ -43,7 +44,8 @@ public class Main05 {
         return false;
     }
 
-    public static String[] inputFromFile(TextFileInput input) {
+    public static String[] inputFromFile(TextFileInput input) 
+    {
         // Here, we use an ArrayList since it's a dynamic structure that 
         // we can keep adding elements to without worrying about it getting 
         // full. This helps us avoid worrying about how many lines is contained

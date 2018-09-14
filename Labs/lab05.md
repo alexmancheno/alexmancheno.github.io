@@ -11,13 +11,14 @@ lab05
 └── bin
 ├── lab05_input.txt
 ```
-You can do so by typing in the following into the PowerShell:
+You can do so by typing in the following into the PowerShell while in the root of your `H:\` drive:
 ```
 > mkdir lab05
 > mkdir lab05/src
 > mkdir lab05/bin
 > New-Item -Name "lab05/src/Main.java" -ItemType "file"
-> New-Item -Name "lab05_input.txt"
+> New-Item -Name "lab05/src/TextFileInput.java" -ItemType "file"
+> New-Item -Name "lab05/lab05_input.txt"
 ```
  
 3. `cd` into your new project, `lab05`.
@@ -91,3 +92,5 @@ You can get the code for `TextFileInput.java` from either BlackBoard or <a href=
 > java -cp bin Main input.txt
 ```
 Notice we are passing in `input.txt` as an *argument* to our program! `input.txt` corresponds to `args[0]` in our `main(String[] args)` method.
+
+9. To look at the answer for this lab, click <a href="/Misc/Main05.java" target="_blank">here</a>.

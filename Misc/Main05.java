@@ -68,4 +68,29 @@ public class Main05
         // Finally, return the converted String array
         return result;
     }
+
+    // Sort an integer array from least to greatest
+    public static void selectionSort(int[] input)
+    {
+        for (int i = 0; i < input.length; i++)
+        {
+            int smallestIndex = i;
+            for (int j = i + 1; j < input.length; j++)
+            {
+                if (input[j] < input[smallestIndex])
+                {
+                        smallestIndex = j;
+                }
+            }
+            swap(input, i, smallestIndex);
+        }
+    }
+
+    // Swap elements in an integer array
+    public static void swap(int[] input, int i, int j)
+    {
+        int temp = input[i];
+        input[i] = input[j];
+        input[j] = temp;
+    }
 }

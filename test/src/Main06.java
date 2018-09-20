@@ -20,7 +20,7 @@ public class Main06
         
         System.out.printf("Before sorting: %s \n", Arrays.toString(inputArray));
         selectionSort(inputArray);
-        System.out.printf("Before sorting: %s \n", Arrays.toString(inputArray));
+        System.out.printf("After sorting: %s \n", Arrays.toString(inputArray));
 
         sum = sum(inputArray);
         average = average(inputArray);

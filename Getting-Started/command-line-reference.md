@@ -49,7 +49,7 @@ The following executes `HelloWorld.class` from the current directory:
 > java HelloWorld
 ```
 
-The following compiles everything inside the **bin** folder with `HelloWorld.class` being the main class (must contain the **main()** method):
+The following loads everything inside the **bin** folder with `HelloWorld.class` being the main class (must contain the **main()** method):
 ```
 > java -cp bin HelloWorld
 ```

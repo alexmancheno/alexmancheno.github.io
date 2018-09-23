@@ -27,9 +27,9 @@ You can do so by typing in the following into the PowerShell while in the root o
 
 5. Copy and paste the code from <a href="/Misc/TODO/Main06.java" target="_blank">here</a> into `Main06.java`.
 
-6. Copy and paste the code from <a href="/Misc/TextFileInput.java" target="_blank">here</a> into `TextFileInput.java`.
+6. Copy and paste the code from <a href="/Misc/Solutions/TextFileInput.java" target="_blank">here</a> into `TextFileInput.java`.
 
-7. Copy and paste the input numbers from <a href="/Misc/lab06input.txt" target="_blank">here</a> into `lab06input.txt`.
+7. Copy and paste the input numbers from <a href="/Misc/Input/lab06input.txt" target="_blank">here</a> into `lab06input.txt`.
 
 8. Fill in the `sum()` and `average()` static methods.
 
@@ -37,4 +37,4 @@ You can do so by typing in the following into the PowerShell while in the root o
 
 10. Print out the output from using the above methods.
 
-11. The completed code for this lab can be found <a href="/Misc/Main06.java" target="_blank">here</a>.
+11. The completed code for this lab can be found <a href="/Misc/Solutions/Main06.java" target="_blank">here</a>.

@@ -50,4 +50,4 @@ You can do so by typing in the following into the PowerShell:
 
 13. **Bonus:** write a method to convert `centigrade` to `fahrenheit`.
 
-14. Solution for this lab can be found here <a href="/Misc/Main03.java" target="_blank">here</a>.
+14. Solution for this lab can be found here <a href="/Misc/Solutions/Main03.java" target="_blank">here</a>.

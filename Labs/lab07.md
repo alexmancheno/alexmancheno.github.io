@@ -34,18 +34,25 @@ You can do so by typing in the following into the PowerShell while in the root o
 8. Fill in the `fillArray()` method. The method should return an m x n matrix containing every number after the **second** number of the input file. The first number of the input file is the number of **rows** while the second number of the input file is the number of **columns**.
 
 9. Fill in the `printArrayEven()` method. The method should print only the even numbers of the array. For example, an array like:
-
 ```
-1 2 3
-4 5 6
-7 8 9
+    1 2 3
+    4 5 6
+    7 8 9
 ```
-
 Should print as:
 ```
-* 2 *
-4 * 6
-* 8 * 
+    * 2 *
+    4 * 6
+    * 8 * 
+```
+10. Compile your program:
+```
+> javac src/*.java -d bin
+```
+
+11. Run your program:
+```
+> java -cp bin Main07 lab07input.txt
 ```
 
 ## Solution

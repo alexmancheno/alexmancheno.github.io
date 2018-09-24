@@ -75,3 +75,6 @@ You can do so by typing in the following into the PowerShell:
     ```
 
 8. The program only checks for one word at a time. Wrap the above program in an infinite `while` loop that will stop when the word "STOP" is entered. If the word "STOP" is entered, exit the program by calling `System.exit(0)`.
+
+## Solution
+The completed code for this lab can be found <a href="/Misc/Solutions/Main04.java" target="_blank">here</a>.

@@ -94,7 +94,7 @@ From the root directory of your project, `App/`, enter the following into the te
 ```
 > java -cp bin Main
 ```
-The above invokes the JVM to load `Main.class` into the classpath and then executes it. You can read more about classpaths [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html). Running the above command will generate the following output:
+The `-cp bin` component tells the JVM to load everything inside the `bin` folder into the classpath (you can read more about classpaths [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html)). The `Main` component tells the JVM which of our classes is the *main* class (the class containing the `main(String[] args)` method). Running the above command will generate the following output:
 ```
 > java -cp bin Main
 Hello, world!

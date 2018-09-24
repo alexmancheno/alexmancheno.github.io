@@ -37,4 +37,5 @@ You can do so by typing in the following into the PowerShell while in the root o
 
 10. Print out the output from using the above methods.
 
-11. The completed code for this lab can be found <a href="/Misc/Solutions/Main06.java" target="_blank">here</a>.
+## Solution
+The completed code for this lab can be found <a href="/Misc/Solutions/Main06.java" target="_blank">here</a>.

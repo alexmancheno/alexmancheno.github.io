@@ -89,8 +89,9 @@ You can get the code for `TextFileInput.java` from either BlackBoard or <a href=
 
 8. Run your code:
 ```
-> java -cp bin Main input.txt
+> java -cp bin Main lab05_input.txt
 ```
-Notice we are passing in `input.txt` as an *argument* to our program! `input.txt` corresponds to `args[0]` in our `main(String[] args)` method.
+Notice we are passing in `lab05_input.txt` as an *argument* to our program! `lab05_input.txt` corresponds to `args[0]` in our `main(String[] args)` method.
 
-9. To look at the answer for this lab, click <a href="/Misc/Main05.java" target="_blank">here</a>.
+## Solution
+To look at the answer for this lab, click <a href="/Misc/Solutions/Main05.java" target="_blank">here</a>.

@@ -6,7 +6,7 @@
 ```
 lab07
 └── src
-    ├── Main.java
+    ├── Main07.java
     ├── TextFileInput.java
 └── bin
 ├── lab07input.txt

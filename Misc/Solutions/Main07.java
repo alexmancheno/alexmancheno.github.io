@@ -1,4 +1,3 @@
-
 public class Main07 
 {
     // Global static variable
@@ -54,7 +53,7 @@ public class Main07
         // Declare and initialize an array of integer arrays 
         int[][] result = new int[row][];
 
-        // Initialize every element of 'result' as a new array. This part
+        // Initialize every element of 'result' as a new integer array. This part
         // is necessary!
         for (int i = 0; i < row; i++)
             result[i] = new int[col];
@@ -64,11 +63,64 @@ public class Main07
         {
             for (int j = 0; j < col; j++) 
             {
-                result[i][j] = Integer.parseInt(tfi.readLine());
+                // Use try-catch block try prevent the programming
+                // from halting if an exception is thrown by the
+                // Integer.parseInt() method
+                try 
+                {
+                    result[i][j] = Integer.parseInt(tfi.readLine());
+                }
+                catch (NumberFormatException e)
+                {
+                    e.printStackTrace();
+                }
             }
         }
 
         // Return the resulting two-dimensional array after filling it
+        return result;
+    }
+
+    // This method does the exact same thing as the method above 
+    // (minus the error checking when reading from the file)
+    private static int[][] fillArrayAlternate(String myFile) 
+    {
+        // Declare variables and initialize them to null
+        FileReader fr = null;
+        Scanner reader = null;
+        try 
+        {
+            fr = new FileReader(myFile); // Can throw FileNotFoundException
+            reader = new Scanner(fr);
+        } 
+        catch (FileNotFoundException e) 
+        {
+            e.printStackTrace();
+        }
+
+        // Get the number of rows and columns from input
+        int row = reader.nextInt();
+        int col = reader.nextInt();
+
+        // Declare and initialize an array of integer arrays
+        int[][] result = new int[row][];
+
+        // Initialize every element of 'result' as a new integer array. This part
+        // is necessary!
+        for (int i = 0; i < row; i++)
+            result[i] = new int[col];
+
+        // Begin filling array with the remaining input
+        for (int i = 0; i < row; i++) 
+        {
+            for (int j = 0; j < col; j++) 
+            {
+                int num = reader.nextInt();
+                result[i][j] = num;
+            }
+        }
+
+        // Finally, return the result of filling in the array
         return result;
     }
 }

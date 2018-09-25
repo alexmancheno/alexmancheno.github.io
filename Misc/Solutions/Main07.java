@@ -1,5 +1,5 @@
 
-public class Main07_08 
+public class Main07 
 {
     // Global static variable
     public static int[][] myArray;

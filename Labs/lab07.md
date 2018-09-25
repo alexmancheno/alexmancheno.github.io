@@ -13,12 +13,7 @@ lab07
 ```
 You can do so by typing in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-> mkdir lab07
-> mkdir lab07/src
-> mkdir lab07/bin
-> New-Item -Name "lab07/src/Main07.java" -ItemType "file"
-> New-Item -Name "lab07/src/TextFileInput.java" -ItemType "file"
-> New-Item -Name "lab07/lab07input.txt"
+mkdir lab07; mkdir lab07/src; mkdir lab07/bin; New-Item -Name "lab07/src/Main07.java" -ItemType "file"; New-Item -Name "lab07/src/TextFileInput.java" -ItemType "file"; New-Item -Name "lab07/lab07input.txt"
 ```
  
 3. `cd` into your new project, `lab07`.

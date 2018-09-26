@@ -1,3 +1,8 @@
+// Import libraries from the JDK so we can use them throughout the program
+import java.util.Scanner;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+
 public class Main07 
 {
     // Global static variable

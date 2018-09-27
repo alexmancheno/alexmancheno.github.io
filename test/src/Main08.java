@@ -1,12 +1,15 @@
 
 // Import libraries from the JDK so we can use them throughout the program
 import java.util.StringTokenizer;
+import java.lang.NumberFormatException;
 
-public class Main08 {
+public class Main08 
+{
     // Global static variable
     public static int[][] myArray;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         // Initialize the global static variable, 'myArray'
         myArray = fillArray(args[0]);
 
@@ -14,8 +17,10 @@ public class Main08 {
         printArray(myArray);
     }
 
-    private static void printArray(int[][] theArray) {
-        for (int i = 0; i < theArray.length; i++) {
+    private static void printArray(int[][] theArray) 
+    {
+        for (int i = 0; i < theArray.length; i++) 
+        {
             for (int j = 0; j < theArray[i].length; j++)
                 System.out.printf("%d\t", theArray[i][j]); // '\t' is short for 'tab'
 
@@ -23,7 +28,8 @@ public class Main08 {
         }
     }
 
-    private static int[][] fillArray(String myFile) {
+    private static int[][] fillArray(String myFile) 
+    {
         // Declare and initialize our text file input object
         TextFileInput input = new TextFileInput(myFile);
 
@@ -53,14 +59,23 @@ public class Main08 {
          */
 
         // Begin filling in the resulting array from the remainder of the input file
-        for (int i = 0; i < rows; i++) {
+        for (int i = 0; i < rows; i++) 
+        {
             line = input.readLine(); // read the next line
             tokenizer = new StringTokenizer(line, delimiter);
-            for (int j = 0; j < cols; j++) {
+            for (int j = 0; j < cols; j++) 
+            {
                 // Read a token from the current line
                 String token = tokenizer.nextToken();
-                int num = Integer.parseInt(token); // convert token to an integer
-                result[i][j] = num;
+
+                try 
+                {
+                    int num = Integer.parseInt(token); // convert token to an integer
+                    result[i][j] = num;
+                } catch (NumberFormatException e) 
+                {
+                    e.printStackTrace(); // prints the function call leading up to the exception
+                }
             }
         }
 

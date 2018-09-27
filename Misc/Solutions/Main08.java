@@ -1,5 +1,6 @@
 // Import libraries from the JDK so we can use them throughout the program
 import java.util.StringTokenizer;
+import java.lang.NumberFormatException;
 
 public class Main08 
 {
@@ -65,8 +66,17 @@ public class Main08
             {
                 // Read a token from the current line
                 String token = tokenizer.nextToken();
-                int num = Integer.parseInt(token); // convert token to an integer
-                result[i][j] = num;
+                
+                // Wrap the potentially problematic code with a try-catch block
+                try 
+                {
+                    int num = Integer.parseInt(token); // convert token to an integer
+                    result[i][j] = num;
+                } 
+                catch (NumberFormatException e)
+                {
+                    e.printStackTrace(); // prints the function call leading up to the exception
+                }
             }
         }
 

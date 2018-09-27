@@ -1,3 +1,5 @@
+// Updated on 9/27/18 at 6:36pm 
+
 // Import the library containing the JOptionPane class
 import javax.swing.*;
 
@@ -8,13 +10,13 @@ public class Main04
         String[] wordArray = { "hello", "goodbye", "cat", "dog", "red", "green", "sun", "moon" };
         String isOrIsNot = null, inputWord = null;
 
-        // This line asks the user for input by popping out a single window
-        // with text input
-        inputWord = JOptionPane.showInputDialog(null, "Enter a word in all lower case:");
-
         // if the inputWord is contained within wordArray return true
         while (true)
         {
+            // This line asks the user for input by popping out a single window
+            // with text input
+            inputWord = JOptionPane.showInputDialog(null, "Enter a word in all lower case:");
+
             if (inputWord.equals("STOP"))
                 System.exit(0);
             else if (wordIsThere(inputWord, wordArray)) 

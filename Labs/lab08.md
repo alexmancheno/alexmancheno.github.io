@@ -13,7 +13,7 @@ lab08
 ├── lab08input.txt
 ├── animals.txt
 ```
-You can do so by typing in the following into the PowerShell while in the root of your `H:\` drive:
+You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
 mkdir lab08; mkdir lab08/src; mkdir lab08/bin; New-Item -Name "lab08/src/Main08.java" -ItemType "file"; New-Item -Name "lab08/src/TextFileInput.java" -ItemType "file"; New-Item -Name "lab08/src/Tokens.java" -ItemType "file"; New-Item -Name "lab08/lab08input.txt; New-Item -Name "lab08/animals.txt -ItemType "file"
 ```

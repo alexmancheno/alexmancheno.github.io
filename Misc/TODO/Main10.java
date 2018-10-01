@@ -3,7 +3,7 @@
  * @author K. Lord A program that works with two-dimension arrays.
  *
  */
-public class Lab10 
+public class Main10 
 {
     private static int[][] matrix;
 

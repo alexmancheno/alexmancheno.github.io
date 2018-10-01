@@ -60,7 +60,7 @@ lab10
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab10; mkdir lab10/src; mkdir lab10/bin; mkdir lab10/doc; New-Item -Name  New-Item -Name "lab10/src/Main10.java" -ItemType "file"
+mkdir lab10; mkdir lab10/src; mkdir lab10/bin; mkdir lab10/doc; New-Item -Name "lab10/src/Main10.java" -ItemType "file"
 ```
  
 3. `cd` into your new project, `lab10`.
@@ -77,7 +77,7 @@ mkdir lab10; mkdir lab10/src; mkdir lab10/bin; mkdir lab10/doc; New-Item -Name  
 ```
 This command generates *Javadoc* for all the source code inside the `src` folder and places the output inside the `doc` folder. 
 
-8. Look inside the `doc` folder and find `index.html`. This HTML file is the *homepage* to your projects Javadoc.
+8. Look inside the `doc` folder and find `index.html`. This HTML file is the *homepage* to your projects Javadoc. Open `index.html` by right clicking on `index.html` -> Open With -> Google Chrome (or whichever you prefer). This will open the HTML page showing the Javadoc you wrote for the project!
 
 ## Solution
 The completed code for this lab can be found <a href="/Misc/Solutions/Main10.java" target="_blank">here</a>.

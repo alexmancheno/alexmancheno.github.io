@@ -60,7 +60,7 @@ lab10
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab10; mkdir lab10/src; mkdir lab10/bin; mkdir lab10/doc; New-Item -Name  New-Item -Name "lab10/src/Main10.java -ItemType "file"
+mkdir lab10; mkdir lab10/src; mkdir lab10/bin; mkdir lab10/doc; New-Item -Name  New-Item -Name "lab10/src/Main10.java" -ItemType "file"
 ```
  
 3. `cd` into your new project, `lab10`.

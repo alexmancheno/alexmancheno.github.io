@@ -1,3 +1,4 @@
+# Lab 04
 > Aim: To practice with arrays and writing your own methods
 
 1. Open up PowerShell and `cd` into your `H:\` drive:

@@ -1,3 +1,5 @@
+# Lab 08
+
 > Aim: StringTokenizers and two-dimensional arrays
 
 1. Open up PowerShell and `cd` into your `H:\` drive.
@@ -15,7 +17,7 @@ lab08
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab08; mkdir lab08/src; mkdir lab08/bin; New-Item -Name "lab08/src/Main08.java" -ItemType "file"; New-Item -Name "lab08/src/TextFileInput.java" -ItemType "file"; New-Item -Name "lab08/src/Tokens.java" -ItemType "file"; New-Item -Name "lab08/lab08input.txt; New-Item -Name "lab08/animals.txt -ItemType "file"
+mkdir lab08; mkdir lab08/src; mkdir lab08/bin; New-Item -Name "lab08/src/Main08.java" -ItemType "file"; New-Item -Name "lab08/src/TextFileInput.java" -ItemType "file"; New-Item -Name "lab08/src/Tokens.java" -ItemType "file"; New-Item -Name "lab08/lab08input.txt -ItemType "file"; New-Item -Name "lab08/animals.txt -ItemType "file"
 ```
  
 3. `cd` into your new project, `lab08`.

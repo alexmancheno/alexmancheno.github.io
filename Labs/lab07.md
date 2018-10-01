@@ -1,3 +1,5 @@
+# Lab 07
+
 > Aim: Two-dimensional arrays and input files
 
 1. Open up PowerShell and `cd` into your `H:\` drive.

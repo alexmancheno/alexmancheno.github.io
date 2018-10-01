@@ -1,3 +1,4 @@
+# Lab 03
 > Aim: To become familiar with Java variables, operators, conditional, and iteration statements.
 
 1. Open up PowerShell and `cd` into your `H:\` drive:

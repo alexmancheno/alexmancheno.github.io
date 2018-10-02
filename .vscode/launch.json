@@ -2,6 +2,36 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HelloWorldMore",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "HelloWorldMore",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Lab11",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Lab11",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main11",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Main11",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main08",
             "request": "launch",
             "cwd": "${workspaceFolder}",

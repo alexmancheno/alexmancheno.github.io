@@ -15,7 +15,7 @@ lab11
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab11; mkdir lab11/src; mkdir lab11/bin; mkdir lab11/doc; New-Item -Name "lab11/src/Main11.java" -ItemType "file"; New-Item -Name "lab11/src/HelloWorldSwing.java" -ItemType "file"; New-Item -Name "lab11/src/HelloWorldMore.java" -ItemType "file"
+mkdir lab11; mkdir lab11/src; mkdir lab11/bin; New-Item -Name "lab11/src/Main11.java" -ItemType "file"; New-Item -Name "lab11/src/HelloWorldSwing.java" -ItemType "file"; New-Item -Name "lab11/src/HelloWorldMore.java" -ItemType "file"
 ```
  
 3. `cd` into your new project, `lab11`.
@@ -41,3 +41,13 @@ set to visible, an input dialog is opened for more text, and that text is put in
 ```
 java -cp bin HelloWorldMore
 ```
+
+11. Take a look at `Main11.java`. There, you'll see two classes, `Main11` and `Gui11`. The goal is two create your own custom *gui* object. Notice the first thing we do is *extend* from the `JFrame` class, inheriting to `Gui` all of `JFrame`'s non-private methods and variables.
+
+12. *Initialize* all of the instance variables inside the constructors of `Gui11`.
+
+13. Fill in `showGui()` so that, once initialized, will *show* `Gui11` to the screen.
+
+
+## Solution
+The completed code for this lab can be found <a href="/Misc/Solutions/Main11.java" target="_blank">here</a>.

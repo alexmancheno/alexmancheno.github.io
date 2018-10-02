@@ -16,6 +16,7 @@ public class Main11
 
 class Gui11 extends JFrame
 {
+    // Private instance variables
     private JScrollPane scrollPane;
     private JTextArea matrixDisplay;
     private JLabel sumDisplay; 

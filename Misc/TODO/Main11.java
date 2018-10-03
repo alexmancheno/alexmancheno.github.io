@@ -1,4 +1,4 @@
-// Last updated: 10:30pm at 10/1/18 (not finished)
+// Last updated: 10:30pm at 10/1/18
 
 import java.awt.GridLayout;
 import javax.swing.JFrame;

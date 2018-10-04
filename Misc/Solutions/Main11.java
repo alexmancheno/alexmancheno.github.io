@@ -39,7 +39,7 @@ class Gui11 extends JFrame
     // Constructor with a single parameter
     public Gui11(String title)
     {
-        // Call the super constructor to 
+        // Call the super constructor to instantiate the super class variables
         super(title);
 
         // Configure the main JFrame

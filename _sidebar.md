@@ -17,3 +17,4 @@
   * [08](Labs/lab08.md)
   * [10](Labs/lab10.md)
   * [11](Labs/lab11.md)
+  * [12](Labs/lab12.md)

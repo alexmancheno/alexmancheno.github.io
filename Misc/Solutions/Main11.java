@@ -72,9 +72,7 @@ class Gui11 extends JFrame
         String sumString = getSumString(input);
 
         // Set the text to the displays with the text that's already there
-        // concatenated
-        
-        // with the matrix and sum strings
+        // concatenated with the matrix and sum strings
         this.matrixDisplay.setText(this.matrixDisplay.getText() + matrixString);
         this.sumDisplay.setText(this.sumDisplay.getText() + sumString);
     }

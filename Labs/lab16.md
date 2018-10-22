@@ -70,4 +70,4 @@ You should see the following output:
 ```
 
 ## Solution
-The completed code for `LinkedList.java` can be found <a href="/Misc/Solutions/Main14.java" target="_blank">here</a>.
+The completed code for `LinkedList.java` can be found <a href="/Misc/Solutions/LinkedList.java" target="_blank">here</a>.

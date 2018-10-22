@@ -69,5 +69,3 @@ You should see the following output:
 (f)->(c)->(a)->(b)->(d)->(e)->null
 ```
 
-## Solution
-The completed code for `LinkedList.java` can be found <a href="/Misc/Solutions/Main14.java" target="_blank">here</a>.

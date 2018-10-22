@@ -1,4 +1,4 @@
-# Lab 14
+# Lab 14 (test)
 
 > Aim: Creating your own class, `Money`
 

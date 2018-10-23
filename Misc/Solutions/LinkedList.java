@@ -1,10 +1,11 @@
 public class LinkedList
 {
-    // Internal nodes of linked list should be private
+    // Internal nodes of linked list should be private so users of this class
+    // cannot make grave changes to this linked list
     private Node head;
     private Node tail;
 
-    // The length of the linked list should be public
+    // The length of the linked list may be public
     public int length;
 
     public LinkedList()
@@ -14,6 +15,7 @@ public class LinkedList
         this.length = 0;
     }
 
+    // Add to the end of the linked list
     public void append(String data)
     {
         // Create new node
@@ -29,6 +31,7 @@ public class LinkedList
         this.length++;
     }
 
+    // Add to the beginning of the linked list
     public void prepend(String data)
     {
         // Create new node
@@ -44,6 +47,7 @@ public class LinkedList
         this.length++;
     }
 
+    // Override the toString method we inherit from class Object
     @Override
     public String toString()
     {

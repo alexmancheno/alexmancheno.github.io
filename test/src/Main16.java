@@ -4,14 +4,27 @@ public class Main16
     {
         // Test cases
         LinkedList list = new LinkedList();
+        System.out.printf("Contents of linked list before inserting: %s\n", list.toString());
+
         list.append("a");
+        System.out.printf("Appended  'a': %s\n", list.toString());
+
         list.append("b");
-        list.prepend("c");
-        System.out.println(list);
-        
-        list.append("d");
+        System.out.printf("Appended  'b': %s\n", list.toString());
+
+        list.append("c");
+        System.out.printf("Appended  'c': %s\n", list.toString());
+
+        list.prepend("d");
+        System.out.printf("Prepended 'd': %s\n", list.toString());
+
         list.append("e");
+        System.out.printf("Appended  'e': %s\n", list.toString());
+
         list.prepend("f");
-        System.out.println(list);
+        System.out.printf("Prepended 'f': %s\n", list.toString());
+
+        list.prepend("g");
+        System.out.printf("Prepended 'g': %s\n", list.toString());
     }
 }

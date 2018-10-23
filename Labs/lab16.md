@@ -41,8 +41,8 @@ mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main14.
     **3) Change the `tail` *variable* to point to the new node:**<br><img src="svg/4.svg" alt="My Awesome SVG" style="height:170px"><br>
 12. Fill in the `prepend()` method. The goal of this method is to take the string we get as a parameter and add it to the beginning of the list. Adding to the beginning of a linked list can be done in three steps:<br>
     **1) Create the new node:**<br><img src="svg/2.svg" alt="My Awesome SVG" style="height:220px"><br>
-    **2) Set the new node's `next` property to point to whatever the `head` *node's* next property is pointing to:**<br><img src="svg/6.svg" alt="My Awesome SVG" style="height:180px"><br>
-    **3) Set the `head` *variable* to point to the new node:**<br><img src="svg/7.svg" alt="My Awesome SVG" style="height:180px"><br>
+    **2) Set the new node's `next` property to point to whatever the `head` *node's* next property is pointing to (remember, `head.next` is the first *real* node of the linked list):**<br><img src="svg/6.svg" alt="My Awesome SVG" style="height:180px"><br>
+    **3) Set the `head.next` *variable* to point to the new node:**<br><img src="svg/7.svg" alt="My Awesome SVG" style="height:180px"><br>
 
 10. Override the `toString()` method we inherit from the `Object` class. The method should return a string that looks like the following:
 ```

@@ -15,7 +15,7 @@ lab16
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main14.java" -ItemType "file"; New-Item -Name "lab16/src/LinkedList.java" -ItemType "file"; New-Item -Name "lab16/src/Node.java" -ItemType "file" 
+mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main16.java" -ItemType "file"; New-Item -Name "lab16/src/LinkedList.java" -ItemType "file"; New-Item -Name "lab16/src/Node.java" -ItemType "file" 
 ```
 3. Copy and paste the code from <a href="/Misc/TODO/Main16.java" target="_blank">here</a> into `Main16.java`.
 

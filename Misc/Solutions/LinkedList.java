@@ -43,6 +43,10 @@ public class LinkedList
         // Make the head's next node point to the new node
         this.head.next = newNode; 
 
+        // If tail == head, then we need to move tail as well.
+        // This only happens if linked list is empty
+        if (tail == head) tail = newNode;
+
         // Increment the length property of this linked list
         this.length++;
     }

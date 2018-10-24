@@ -6,8 +6,8 @@ public class Main16
         LinkedList list = new LinkedList();
         System.out.printf("Contents of linked list before inserting: %s\n", list.toString());
 
-        list.append("a");
-        System.out.printf("Appended  'a': %s\n", list.toString());
+        list.prepend("a");
+        System.out.printf("Prepended 'a': %s\n", list.toString());
 
         list.append("b");
         System.out.printf("Appended  'b': %s\n", list.toString());

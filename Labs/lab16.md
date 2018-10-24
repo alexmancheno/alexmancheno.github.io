@@ -35,14 +35,15 @@ mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main14.
 <img src="svg/1.svg" alt="My Awesome SVG" style="height:180px">
 
 11. Fill in the `append()` method. The goal of the method is to take the string we get as a parameter and add it to the end of the linked list. Adding to the end of a linked list can be done in three steps:<br>
-    **1) Create the new node:**<br><img src="svg/2.svg" alt="My Awesome SVG" style="height:220px"><br>
-    **2) Set the `tail` *node's* `next` property to point to the new node:**<br>
+    **1) Create the new node, call it `newNode`:**<br><img src="svg/2.svg" alt="My Awesome SVG" style="height:220px"><br>
+    **2) Set the `tail.next` to `newNode`:**<br>
     <img src="svg/3.svg" alt="My Awesome SVG" style="height:180px"><br>
-    **3) Change the `tail` *variable* to point to the new node:**<br><img src="svg/4.svg" alt="My Awesome SVG" style="height:170px"><br>
+    **3) Set `tail` to `newNode`:**<br><img src="svg/4.svg" alt="My Awesome SVG" style="height:170px"><br>
 12. Fill in the `prepend()` method. The goal of this method is to take the string we get as a parameter and add it to the beginning of the list. Adding to the beginning of a linked list can be done in three steps:<br>
-    **1) Create the new node:**<br><img src="svg/2.svg" alt="My Awesome SVG" style="height:220px"><br>
-    **2) Set the new node's `next` property to point to whatever the `head` *node's* next property is pointing to (remember, `head.next` is the first *real* node of the linked list):**<br><img src="svg/6.svg" alt="My Awesome SVG" style="height:180px"><br>
-    **3) Set the `head.next` *variable* to point to the new node:**<br><img src="svg/7.svg" alt="My Awesome SVG" style="height:180px"><br>
+    **1) Create the new node, call it `newNode`:**<br><img src="svg/2.svg" alt="My Awesome SVG" style="height:220px"><br>
+    **2) Set `newNode.next` to `head.next` (remember, `head.next` is the first *real* node of the linked list):**<br><img src="svg/6.svg" alt="My Awesome SVG" style="height:180px"><br>
+    **3) Set `head.next` to `newNode`:**<br><img src="svg/7.svg" alt="My Awesome SVG" style="height:180px"><br>
+    **Note: If you're prepending the first node of the linked list (when `tail` == `head`), you need to set `tail` to the new node** 
 
 10. Override the `toString()` method we inherit from the `Object` class. The method should return a string that looks like the following:
 ```
@@ -52,7 +53,7 @@ mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main14.
 To accomplish this, implement the following algorithm:<br>
     1) Create a `Node` *variable* (not an object), `i`, and set it to point to the first real node of the linked list (`head.next`).<br>
     2) Create an empty string (or StringBuilder), `result`.<br>
-    3) Take the string that's currently inside `i` (which is `i.data`) and add it to the end of `result`, followed by a the string "->".<br>
+    3) Take the string that's currently inside `i` (which is `i.data`) and add it to the end of `result`, followed by the string "->".<br>
     4) Set the *variable* `i` to its next node (`i.next`).<br>
     5) Repeat steps 3 and 4 until `i` points to *null* (this happens when you finished iterating through the linked list).<br>
     6) Add the string "null" to the end of `result`.<br>
@@ -65,8 +66,14 @@ java -cp bin Main16
 ```
 You should see the following output:
 ```
-(c)->(a)->(b)->null
-(f)->(c)->(a)->(b)->(d)->(e)->null
+Contents of linked list before inserting: null
+Prepended 'a': (a)->null
+Appended  'b': (a)->(b)->null
+Appended  'c': (a)->(b)->(c)->null
+Prepended 'd': (d)->(a)->(b)->(c)->null
+Appended  'e': (d)->(a)->(b)->(c)->(e)->null
+Prepended 'f': (f)->(d)->(a)->(b)->(c)->(e)->null
+Prepended 'g': (g)->(f)->(d)->(a)->(b)->(c)->(e)->null
 ```
 
 ## Solution

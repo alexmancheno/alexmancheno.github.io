@@ -1,5 +1,11 @@
 > Aim: Inheritance and polymorphism with the Money class
 
+0. This lab involves practice with Java concepts/mechanics and keywords including:<br>
+1) The `abstract` keyword. Read more about it [here](https://www.geeksforgeeks.org/abstract-keyword-in-java/).<br>
+2) The `instanceof` keyword. Read more abuot it [here](https://www.geeksforgeeks.org/java-instanceof-and-its-applications/).<br>
+3) `Dynamic Method Dispatch` (incredibly important). Read more about it [here](https://www.geeksforgeeks.org/dynamic-method-dispatch-runtime-polymorphism-java/).<br>
+4) `Inheritance in Java`. Read more about it [here](https://www.geeksforgeeks.org/inheritance-in-java/).
+
 1. Open up PowerShell and `cd` into your `H:\` drive.
 
 2. Create the following folder structure:

@@ -8,8 +8,24 @@ public class Main17
         Wallet wallet = new Wallet();
         wallet.add(new Penny());
         wallet.add(new Single());
-
+        wallet.add(new Nickel());
+        wallet.add(new Nickel());
+        wallet.add(new Quarter());
+        wallet.add(new Quarter());
+        wallet.printContent();
         System.out.println(wallet);
+
+        Money m1 = new Dime();
+        wallet.add(m1);
+        System.out.printf("m1 is a: %s\n", m1.toString());
+
+        m1 = new Nickel();
+        wallet.add(m1);
+        System.out.printf("m1 is a: %s\n", m1.toString());
+
+        m1 = new Single();
+        wallet.add(m1);
+        System.out.printf("m1 is a: %s\n", m1.toString());
     }
 }
 
@@ -17,21 +33,22 @@ class Wallet
 {
     // An array of Money variables
     private ArrayList<Money> list;
+    private int value;
 
     // Default constructor
     public Wallet() 
     {
-        list = new ArrayList<Money>();
+        this.list = new ArrayList<Money>();
     }
 
     // Add a money object to
     public void add(Money money) 
     {
-        list.add(money);
+        this.value += money.getValue();
+        this.list.add(money);
     }
 
-    @Override
-    public String toString() 
+    public String printContent() 
     {
         int pennyCount = 0, nickelCount = 0, dimeCount = 0, quarterCount = 0, singleCount = 0;
         for (int i = 0; i < list.size(); i++) 
@@ -49,8 +66,14 @@ class Wallet
                 singleCount++;
         }
 
-        return String.format("This wallet has: %d pennys, %d nickels, %d dimes, %d quarters, and %d singles",
+        return String.format("This wallet has: %d penny(s), %d nickel(s), %d dime(s), %d quarter(s), and %d single(s)",
                 pennyCount, nickelCount, dimeCount, quarterCount, singleCount);
+    }
+
+    @Override
+    public String toString()
+    {
+        return String.format("$%d.%d", this.value / 100, this.value % 100);
     }
 }
 
@@ -63,8 +86,15 @@ abstract class Money
         this.value = value;
     }
 
-    public int getValue() {
+    public int getValue() 
+    {
         return this.value;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "money object";
     }
 }
 
@@ -78,7 +108,7 @@ class Single extends Money
     @Override
     public String toString() 
     {
-        return "single";
+        return "single object";
     }
 }
 
@@ -92,7 +122,7 @@ class Quarter extends Money
     @Override
     public String toString() 
     {
-        return "quarter";
+        return "quarter object";
     }
 }
 
@@ -106,7 +136,7 @@ class Dime extends Money
     @Override
     public String toString() 
     {
-        return "dime";
+        return "dime object";
     }
 }
 
@@ -120,7 +150,7 @@ class Nickel extends Money
     @Override
     public String toString()
     {
-        return "nickel";
+        return "nickel object";
     }
 }
 
@@ -134,6 +164,6 @@ class Penny extends Money
     @Override
     public String toString() 
     {
-        return "penny";
+        return "penny object";
     }
 }

@@ -26,8 +26,6 @@ public class Main17
         m1 = new Single();
         wallet.add(m1);
         System.out.printf("m1 is a: %s\n", m1.toString());
-
-        System.out.printf("Wallet value: %s\n", wallet);
     }
 }
 

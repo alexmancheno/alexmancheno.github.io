@@ -10,13 +10,33 @@ public class LinkedList
 
     public LinkedList()
     {
-        this.head = new Node("dummy"); 
+        this.head = new Node(); 
         this.tail = this.head;
         this.length = 0;
     }
 
+    public void insertInOrder(Money data)
+    {
+        // Create new node
+        Node n = new Node(data);
+
+        // Create iterator node
+        Node i = head;
+
+        // Look for the two spots we want to insert the new node with
+        while (i.next != null && data.compareTo(i.next.data) > 0)
+        {
+            i = i.next;
+        }
+
+        // Insert the new node between current node and the next node
+        n.next = i.next;
+        i.next = n;
+        this.length++;
+    }
+
     // Add to the end of the linked list
-    public void append(String data)
+    public void append(Money data)
     {
         // Create new node
         Node newNode = new Node(data); 
@@ -32,7 +52,7 @@ public class LinkedList
     }
 
     // Add to the beginning of the linked list
-    public void prepend(String data)
+    public void prepend(Money data)
     {
         // Create new node
         Node newNode = new Node(data); 

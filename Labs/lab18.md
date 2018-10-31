@@ -9,14 +9,14 @@
 lab18
 └── src
     ├── Main18.java
-    ├── LinkedList.java
+    ├── SortedLinkedList.java
     ├── Node.java
     ├── Money.java
 └── bin
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main17.java" -ItemType "file"; New-Item -Name "lab18/src/LinkedList.java" -ItemType "file"; New-Item -Name "lab18/src/Node.java" -ItemType "file"; New-Item -Name "lab18/src/Money.java" -ItemType "file"
+mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main17.java" -ItemType "file"; New-Item -Name "lab18/src/SortedLinkedList.java" -ItemType "file"; New-Item -Name "lab18/src/Node.java" -ItemType "file"; New-Item -Name "lab18/src/Money.java" -ItemType "file"
 ```
 
 3. `cd` into your new project, `lab18`.
@@ -25,23 +25,23 @@ mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main17.
 
 5. Copy and paste the code from <a href="/Misc/TODO/Main18.java" target="_blank">here</a> into `Main18.java`.
 
-6. Copy and paste the code from <a href="/Misc/Solutions/LinkedList.java" target="_blank">here</a> into `LinkedList.java`.
+6. Copy and paste the code from <a href="/Misc/TODO/SortedLinkedList.java" target="_blank">here</a> into `SortedLinkedList.java`.
 
 7. Copy and paste the code from <a href="/Misc/Other/Node.java" target="_blank">here</a> into `Node.java`.
 
 8. Copy and paste the code from <a href="/Misc/Other/Money.java" target="_blank">here</a> into `Money.java`.
 
 9. Now that `lab18` is set up, let's quickly review some bits of the classes we have worked with so far:<br>
-1) `Money` is a class where each object contains two variables, `dollars` and `cents`. These two fields are used in the class's `compareTo()` method to help determine whether one `Money` object is either less than, equal to, or greater than another `Money` object.<br>
-2) `Node` is a class where each object contains two variables, `data` and `next`. `data` is a variable to a *string* object, but we can change its type to be a variable of whatever we want. `next` is simply a variable to another `Node` object.<br>
-3) `LinkedList` is a class where each object contains two `Node` variables, `head` and `tail`. By convention, `head` points to a dummy `Node` object, and `head.next` points to the first *real* `Node` object of the linked list. `tail` points to the last `Node` object of the linked list.<br>
+1) `Money` is a class where each of its objects contain two variables, `dollars` and `cents`. These two fields are used in the class's `compareTo()` method to help determine whether one `Money` object is either less than, equal to, or greater than another `Money` object.<br>
+2) `Node` is a class where each of its objects contain two variables, `data` and `next`. `data` is a variable to a *string* object, but we can change its type to be a variable of whatever we want. `next` is simply a variable to another `Node` object.<br>
+3) `LinkedList` is a class where each of its objects contain two `Node` variables, `head` and `tail`. The easiest kind of linked list to work with is one where `head` always points to a *dummy* `Node` object, and `head.next` points to the first *real* `Node` object of the linked list. `tail` points to the last `Node` object of the linked list.`SortedLinkedList` will follow this approach.<br>
 
-10. Currently, `LinkedList` holds strings. Update `LinkedList` and `Node` so that they store `Money` objects instead of strings.
+10. Currently, `Node` holds strings. Update `Node` so that its objects store `Money` objects instead of strings.
 
-11. Create a method called `insertInOrder()` so that a new `Money` object is inserted into the linked list in *ascending* order. *Hint:* you'll need to use `compareTo()` from the `Money` class.<br><br>
-**Suppose we have the following linked list of `Money` objects:**<br>
+11. Create a method called `insert()` in `SortedLinkedList` so that it takes a `Money` object as a parameter and inserts based on *ascending* order.<br>**Hint:** you'll need to use `compareTo()` from the `Money` class.<br><br>
+**In general, inserting into a sorted linked list can be done in 6 steps. Suppose we have the following linked list of `Money` objects:**<br>
 <img src="svg/insert0.svg" alt="My Awesome SVG" style="height:180px"><br>
-**In general, inserting into a sorted linked list can be done in 6 steps. Let's insert `$4.75`:**<br>
+**Let's insert `$4.75`:**<br>
 **1) Create and set a `Node` variable, `n`, to point to a new `Node` object containing the data being inserted**<br>
 <img src="svg/insert1.svg" alt="My Awesome SVG" style="height:180px"><br>
 **2) Create and set a `Node` variable, `i`, to `head`**.<br>
@@ -53,9 +53,9 @@ mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main17.
 **5) Set `n.next` to `i.next`.**<br>
 <img src="svg/insert5.svg" alt="My Awesome SVG" style="height:180px"><br>
 **6) Set `i.next` to `n`.**<br>
-** Note: if `i` is equal to `head` or `tail`, then we need update `tail` to `n`.**<br> 
+**Note: if `i` is equal to `head` or `tail`, then we need update `tail` to `n`.**<br> 
 <img src="svg/insert6.svg" alt="My Awesome SVG" style="height:180px"><br>
-** When the function call ends, the linked list will look like the following:**<br>
+**When the function call ends, the linked list will look like the following:**<br>
 <img src="svg/insert-final.svg" alt="My Awesome SVG" style="height:180px"><br>
 
 12. Compile and run your code:
@@ -74,6 +74,6 @@ Inserting $0.44: ($0.44)->($2.44)->($3.99)->($4.50)->($6.01)->null
 ```
 
 ## Solution
-The completed code for `LinkedList.java` can be found <a href="/Misc/Solutions/Lab18/LinkedList.java" target="_blank">here</a>.
+The completed code for `LinkedList.java` can be found <a href="/Misc/Solutions/Lab18/SortedLinkedList.java" target="_blank">here</a>.
 
 The completed code for `Node.java` can be found <a href="/Misc/Solutions/Lab18/Node.java" target="_blank">here</a>.

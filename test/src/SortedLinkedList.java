@@ -1,4 +1,4 @@
-public class LinkedList
+public class SortedLinkedList
 {
     // Internal nodes of linked list should be private so users of this class
     // cannot make grave changes to this linked list
@@ -8,26 +8,27 @@ public class LinkedList
     // The length of the linked list may be public
     public int length;
 
-    public LinkedList()
+    // Default constructor
+    public SortedLinkedList()
     {
         this.head = new Node(); 
         this.tail = this.head;
         this.length = 0;
     }
 
-    public void insertInOrder(Money data)
+    public void insert(Money data)
     {
-        // Create new node
-        Node n = new Node(data);
-
         // Create iterator node
         Node i = head;
 
         // Look for the two spots we want to insert the new node between
-        while (i.next != null && n.data.compareTo(i.next.data) > 0)
+        while (i.next != null && data.compareTo(i.next.data) > 0)
         {
             i = i.next;
         }
+
+        // Create new node
+        Node n = new Node(data);
 
         // Insert the new node between current node and the next node
         n.next = i.next;
@@ -38,41 +39,6 @@ public class LinkedList
         if (i == this.head || i == this.tail) this.tail = n;
     }
 
-    // Add to the end of the linked list
-    public void append(Money data)
-    {
-        // Create new node
-        Node newNode = new Node(data); 
-        
-        // Make the tail node's next node point to the new node
-        this.tail.next = newNode;
-
-        // Set the tail node to point to the new node
-        this.tail = newNode; 
-
-        // Increment the length property of this linked list
-        this.length++;
-    }
-
-    // Add to the beginning of the linked list
-    public void prepend(Money data)
-    {
-        // Create new node
-        Node newNode = new Node(data); 
-
-        // Set the new node's next node to point to whatever the head node's next node is
-        newNode.next = this.head.next; 
-
-        // Make the head's next node point to the new node
-        this.head.next = newNode; 
-
-        // If tail == head, then we need to move tail as well.
-        // This only happens if linked list is empty
-        if (tail == head) tail = newNode;
-
-        // Increment the length property of this linked list
-        this.length++;
-    }
 
     // Override the toString method we inherit from class Object
     @Override

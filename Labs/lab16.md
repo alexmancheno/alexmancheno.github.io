@@ -53,8 +53,8 @@ mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main16.
 ```
 (A)->(B)->(C)->null
 ```
-<br>
-To accomplish this, implement the following algorithm:<br>
+**To accomplish this, implement the following algorithm:**<br>
+
     1) Create a `Node` *variable* (not an object), `i`, and set it to point to the first real node of the linked list (`head.next`).<br>
     2) Create an empty string (or StringBuilder), `result`.<br>
     3) Take the string that's currently inside `i` (which is `i.data`) and add it to the end of `result`, followed by the string "->".<br>

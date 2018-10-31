@@ -17,17 +17,17 @@ public class LinkedList
 
     public void insertInOrder(Money data)
     {
+        // Create new node
+        Node n = new Node(data);
+
         // Create iterator node
         Node i = head;
 
         // Look for the two spots we want to insert the new node between
-        while (i.next != null && data.compareTo(i.next.data) > 0)
+        while (i.next != null && n.data.compareTo(i.next.data) > 0)
         {
             i = i.next;
         }
-
-        // Create new node
-        Node n = new Node(data);
 
         // Insert the new node between current node and the next node
         n.next = i.next;

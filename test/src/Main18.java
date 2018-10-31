@@ -2,6 +2,7 @@ public class Main18
 {
     public static void main(String[] args)
     {
+        // Test cases
         LinkedList list = new LinkedList();
         list.insertInOrder(new Money(2, 32));
         list.insertInOrder(new Money(1, 55));

@@ -16,7 +16,7 @@ lab18
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main17.java" -ItemType "file"; New-Item -Name "lab18/src/SortedLinkedList.java" -ItemType "file"; New-Item -Name "lab18/src/Node.java" -ItemType "file"; New-Item -Name "lab18/src/Money.java" -ItemType "file"
+mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main18.java" -ItemType "file"; New-Item -Name "lab18/src/SortedLinkedList.java" -ItemType "file"; New-Item -Name "lab18/src/Node.java" -ItemType "file"; New-Item -Name "lab18/src/Money.java" -ItemType "file"
 ```
 
 3. `cd` into your new project, `lab18`.

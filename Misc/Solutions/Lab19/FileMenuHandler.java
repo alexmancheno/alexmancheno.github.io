@@ -25,6 +25,7 @@ public class FileMenuHandler implements ActionListener
     {
         // Get the command name from the event
         String menuName = event.getActionCommand();
+        
 
         if (menuName.equals("Open")) {
             

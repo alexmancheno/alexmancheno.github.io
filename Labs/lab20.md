@@ -10,12 +10,12 @@ lab20
 └── src
     ├── Main20.java
     ├── myCheckedException.java
-    ├── UnmyCheckedException.java
+    ├── myUncheckedException.java
 └── bin
 ```
 You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
 ```
-mkdir lab20; mkdir lab20/src; mkdir lab20/bin; New-Item -Name "lab20/src/Main20.java" -ItemType "file"; New-Item -Name "lab20/src/myCheckedException.java" -ItemType "file"; New-Item -Name "lab20/src/UnmyCheckedException.java" -ItemType "file"
+mkdir lab20; mkdir lab20/src; mkdir lab20/bin; New-Item -Name "lab20/src/Main20.java" -ItemType "file"; New-Item -Name "lab20/src/myCheckedException.java" -ItemType "file"; New-Item -Name "lab20/src/myUncheckedException.java" -ItemType "file"
 ```
 
 3. `cd` into your new project, `lab20`.
@@ -28,7 +28,7 @@ mkdir lab20; mkdir lab20/src; mkdir lab20/bin; New-Item -Name "lab20/src/Main20.
         ```
         public static int convertToInt(String s) throws NumberFormatException
         {
-                // This will throw a NumberFormatException if 'n' is not a number
+                // This will throw a NumberFormatException if 's' is not a number
                 int r = Integer.parseInt(s); 
 
                 return r;
@@ -52,10 +52,10 @@ mkdir lab20; mkdir lab20/src; mkdir lab20/bin; New-Item -Name "lab20/src/Main20.
                 }
         } 
         ```
-    2. **Unchecked exceptions:** these kinds of exceptions are not checked at compiled time. All subclasses of the class `RuntimeException` are unchecked exceptions. To make your own unchecked exception class, simply make your new exception class extend from `RuntimeException`. Your program will still compile if there are blocks of code that can throw unhandled unchecked exceptions (meaning the block of code is not wrapped with a `try-catch` block or the enclosing method is not marked with the `throws` keyword). Instead, the program will *halt* if an exception is thrown during execution.
+    2. **Unchecked exceptions:** these kinds of exceptions are not checked at compile time. All subclasses of the class `RuntimeException` are unchecked exceptions. To make your own unchecked exception class, simply make your new exception class extend from `RuntimeException`. Your program will still compile if there are blocks of code that can throw unchecked exceptions and not handle them (meaning the block of code is not wrapped with a `try-catch` block or the enclosing method is not marked with the `throws` keyword). Instead, the program will *halt* if an exception is thrown during execution.
 7. Fill in `myCheckedException.java`. Make this class a.. *checked exception!*
 
-8. Fill in `UnmyCheckedException.java`. Make this class an.. *unchecked exception!*
+8. Fill in `myUncheckedException.java`. Make this class an.. *unchecked exception!*
 
 9. Take a look at `Main20.java`. There are two methods below the `main()` method, `divide()` and `sqrt()`. `divide()` will throw a `myUncheckedException` if you attempt to divide by zero, and `sqrt()` will throw a `myCheckedException` if you attempt to take the square root of a negative number.
 

@@ -25,7 +25,7 @@ public class Main20
     }
 
     // Returns 'a' / 'b'
-    // This will throw an UncheckedException if 'b' == 0
+    // This will throw an myUncheckedException if 'b' == 0
     public static double divide(int a, int b)
     {
         if (b == 0)
@@ -37,7 +37,7 @@ public class Main20
     }
 
     // Return square root of 'a'
-    // This will throw a CheckedException if 'a' < 0
+    // This will throw a myCheckedException if 'a' < 0
     public static double sqrt(int a) throws myCheckedException
     {
         if (a < 0)

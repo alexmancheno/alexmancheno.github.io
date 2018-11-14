@@ -74,6 +74,6 @@ Inserting $0.44: ($0.44)->($2.44)->($3.99)->($4.50)->($6.01)->null
 ```
 
 ## Solution
-The completed code for `LinkedList.java` can be found <a href="/Misc/Solutions/Lab18/SortedLinkedList.java" target="_blank">here</a>.
+The completed code for `SortedLinkedList.java` can be found <a href="/Misc/Solutions/Lab18/SortedLinkedList.java" target="_blank">here</a>.
 
 The completed code for `Node.java` can be found <a href="/Misc/Solutions/Lab18/Node.java" target="_blank">here</a>.

@@ -25,7 +25,7 @@ public class SortedLinkedList<T extends Comparable<T>>
         Node<T> i = head;
 
         // Look for the two spots we want to insert the new node between
-        while (i.next != null && data.compareTo(i.next.data) < 0)
+        while (i.next != null && data.compareTo(i.next.data) > 0)
         {
             i = i.next;
         }

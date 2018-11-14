@@ -184,10 +184,10 @@ You should still see about the same output as in `lab 18`:
 ```
 Linked list of Money objects before inserting: null
 Inserting $2.44: ($2.44)->null
-Inserting $6.01: ($6.01)->($2.44)->null
-Inserting $3.99: ($6.01)->($3.99)->($2.44)->null
-Inserting $4.50: ($6.01)->($4.50)->($3.99)->($2.44)->null
-Inserting $0.44: ($6.01)->($4.50)->($3.99)->($2.44)->($0.44)->null
+Inserting $6.01: ($2.44)->($6.01)->null
+Inserting $3.99: ($2.44)->($3.99)->($6.01)->null
+Inserting $4.50: ($2.44)->($3.99)->($4.50)->($6.01)->null
+Inserting $0.44: ($0.44)->($2.44)->($3.99)->($4.50)->($6.01)->null
 ```
 
 ## Solution

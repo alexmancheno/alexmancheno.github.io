@@ -2,132 +2,32 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Main19",
+            "name": "CodeLens (Launch) - Main23",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "Main19",
+            "mainClass": "Main23",
             "args": ""
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Main18",
+            "name": "CodeLens (Launch) - SaveDate",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
+            "cwd": "C:/Users/Alex/Desktop/alexmancheno.github.io",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "Main18",
+            "mainClass": "SaveDate",
             "args": ""
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Main17",
+            "name": "CodeLens (Launch) - ReadDate",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
+            "cwd": "C:/Users/Alex/Desktop/alexmancheno.github.io/test",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "Main17",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main16",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Main16",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main14",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Main14",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main12",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Main12",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - TestClone",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "TestClone",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - HelloWorldSwing",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "HelloWorldSwing",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - HelloWorldMore",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "HelloWorldMore",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Lab11",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Lab11",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main11",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Main11",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main08",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Main08",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main0606",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "Main0606",
+            "mainClass": "ReadDate",
             "args": ""
         }
     ]

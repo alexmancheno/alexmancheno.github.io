@@ -1,3 +1,5 @@
+// Last updated on 11/25/2018
+
 public class SortedLinkedList
 {
     // Internal nodes of linked list should be private so users of this class
@@ -36,7 +38,7 @@ public class SortedLinkedList
         this.length++;
 
         // Check if we need to update tail as well
-        if (i == this.head || i == this.tail) this.tail = n;
+        if (i == this.tail) this.tail = n;
     }
 
 

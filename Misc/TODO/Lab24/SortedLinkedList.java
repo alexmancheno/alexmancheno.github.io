@@ -1,11 +1,9 @@
-// Last updated on 11/25/2018
-
-public class SortedLinkedList<T extends Comparable<T>>
+public class SortedLinkedList
 {
     // Internal nodes of linked list should be private so users of this class
     // cannot make grave changes to this linked list
-    private Node<T> head;
-    private Node<T> tail;
+    private Node head;
+    private Node tail;
 
     // The length of the linked list may be public
     public int length;
@@ -13,18 +11,18 @@ public class SortedLinkedList<T extends Comparable<T>>
     // Default constructor
     public SortedLinkedList()
     {
-        this.head = new Node<T>(); 
+        this.head = new Node(); 
         this.tail = this.head;
         this.length = 0;
     }
 
-    public void insert(T data)
+    public void insert(Integer data)
     {
         // Create new node
-        Node<T> n = new Node<T>(data);
+        Node n = new Node(data);
 
         // Create iterator node
-        Node<T> i = head;
+        Node i = head;
 
         // Look for the two spots we want to insert the new node between
         while (i.next != null && data.compareTo(i.next.data) > 0)
@@ -41,6 +39,30 @@ public class SortedLinkedList<T extends Comparable<T>>
         if (i == this.tail) this.tail = n;
     }
 
+    // Print values in linked list recursively from first to last
+    public void printFirstToLast()
+    {
+        // TODO
+    }
+
+
+    // Print values in linked list recursively from last to first
+    public void printLastToFirst()
+    {
+        // TODO
+    }
+
+    // Return sum of all money objects in list
+    public int sum()
+    {
+        // TODO
+    }
+
+    // Recursively reverse a linked list
+    public void reverse()
+    {
+        // TODO
+    }
 
     // Override the toString method we inherit from class Object
     @Override
@@ -51,7 +73,7 @@ public class SortedLinkedList<T extends Comparable<T>>
 
         // Iterate through linked list until we hit null, adding the string 
         // that's inside each node to the StringBuilder
-        for (Node<T> i = head.next; i != null; i = i.next)
+        for (Node i = head.next; i != null; i = i.next)
         {
             sb.append(i.toString() + "->");
         }

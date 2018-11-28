@@ -42,7 +42,7 @@
         ```
 
 ## Practice problems
-1. Let's get some practice in. Open up PowerShell and `cd` into your `H:\` drive.
+1. Open up PowerShell and `cd` into your `H:\` drive.
 
 2. Create the following folder structure:
 ```

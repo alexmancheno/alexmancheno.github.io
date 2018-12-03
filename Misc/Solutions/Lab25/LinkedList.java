@@ -62,7 +62,7 @@ public class LinkedList
     public static boolean isPalindrome(LinkedList list) 
     {
         // Declare node that will hold reversed first half of list
-        Node reverse = new Node()
+        Node reverse = new Node();
         
         // Declare nodes we need to iterate through list
         Node i = list.head.next, j = list.head.next, next = null;

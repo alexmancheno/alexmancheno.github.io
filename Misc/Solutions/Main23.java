@@ -14,7 +14,7 @@ public class Main23
         System.out.printf("%s is palindrome: %b\n", "ab", isPalindromeRecursive("ab"));
 
         System.out.println("\n--- Finding max test cases ---");
-        int[] array1 = {-3, 0, 4, 7, 5, 6, -1, 8, 2};
+        int[] array1 = {-3, 0, 4, 7, 5, 6, -1, 8, 2};`
         System.out.printf("array1: %s\n", Arrays.toString(array1));
         System.out.printf("max of array1: %d\n", findMaxRecursive(array1));
 

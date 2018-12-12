@@ -29,3 +29,4 @@
   * [24](Labs/lab24.md)
   * [25](Labs/lab25.md)
   * [26](Labs/lab26.md)
+  * [Final Review](Labs/finalReview.md)

@@ -182,3 +182,5 @@ The completed code for `BST.java` can be found <a href="/Misc/Solutions/Lab26/BS
 The example for `TreeMap` using keys that implement the `Comparable` interface can be found <a href="/Misc/Solutions/Lab26/TreeMapExample1.java" target="_blank">here</a>.
 
 The example for `TreeMap` a `Comparator` can be found <a href="/Misc/Solutions/Lab26/TreeMapExample2.java" target="_blank">here</a>.
+
+Download <a href="/Misc/Solutions/Test.zip" download>this</a>.

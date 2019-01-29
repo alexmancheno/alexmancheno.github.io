@@ -8,12 +8,12 @@ I recommend [Visual Studio Code](https://code.visualstudio.com/) for developing 
 ## Creating a project folder structure
 Open terminal/command prompt, and enter in the following to create the project's main directory:
 ```
-> mkdir ~/Desktop/App
+mkdir ~/Desktop/App
 ```
 
 Change directory into the project's main directory:
 ```
-> cd ~/Desktop/App
+cd ~/Desktop/App
 ```
 
 You are now in the **root directory** of your project. From here, create the following folder structure: 
@@ -75,7 +75,7 @@ The method `public static void main(String[] args)` is the **first** method call
 ## Compiling your code
 Assuming you have the Java JDK properly installed, run the following in the terminal/command prompt from the root directory of your project, `App/`:
 ```
-> javac src/*.java -d bin
+javac src/*.java -d bin
 ```
 The above compiles *everything* with the `.java` extension, e.g., `Main.java` and `Library.java`, and places their compiled counterparts in the `bin` folder. The project folder structure will now look like the following:
 ```
@@ -92,7 +92,7 @@ The `.class` files contain the *bytecode* that the JVM interprets and turns into
 ## Running your code
 From the root directory of your project, `App/`, enter the following into the terminal/command prompt:
 ```
-> java -cp bin Main
+java -cp bin Main
 ```
 The `-cp bin` component tells the JVM to load everything inside the `bin` folder into the classpath (you can read more about classpaths [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html)). The `Main` component tells the JVM which of our classes is the *main* class (the class containing the `main(String[] args)` method). Running the above command will generate the following output:
 ```

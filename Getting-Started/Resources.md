@@ -7,3 +7,6 @@
 * [Official Oracle Java Documentation](https://docs.oracle.com/javase/8/docs/api/). This can serve as your Java reference manual. Being able to navigate through the Oracle Java Documentation is a skill better acquired early on. Many frameworks built with Java have their documentations modelled after Oracle's, like [Netty](https://netty.io/4.1/api/index.html), [Kafka](https://kafka.apache.org/10/javadoc/?org/apache/kafka/clients/consumer/KafkaConsumer.html), [Spring](https://docs.spring.io/spring/docs/5.1.0.RC1/javadoc-api/), and more.  
 * [Tutorialpoint](https://www.tutorialspoint.com/java8/index.htm)
 * [Geeksforgeeks](https://www.geeksforgeeks.org/java/)
+
+### Online courses
+* [Object-Oriented programming with Java by University of Helsinki](http://moocfi.github.io/courses/2013/programming-part-1/). This online course has tons of programming exercises with automated testing via their servers. This is the most hands-on resource I'm aware of!

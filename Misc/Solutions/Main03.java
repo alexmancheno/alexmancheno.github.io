@@ -36,6 +36,6 @@ class Main03
 
     public static float convertToFahrenheit(float c) 
     {
-        return (9.0f / 5.0f) + 32;
+        return c * (9.0f / 5.0f) + 32;
     }
 }

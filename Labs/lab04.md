@@ -32,6 +32,17 @@ javac src/*.java -d bin
 java -cp bin Main04
 ```
 
+14. To transfer `lab04` to your Mars account:
+```
+scp -r ../lab03 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab04` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab04 ./
+```
+
+**Note**: This will place `lab04` where ever your PowerShell session currently is. 
 
 ## Solution
 The completed code for this lab can be found <a href="/Misc/Solutions/Main04.java" target="_blank">here</a>.

@@ -1,7 +1,5 @@
-// Updated on 9/27/18 at 6:36pm 
-
 // Import the library containing the JOptionPane class
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class Main04 
 {
@@ -16,7 +14,7 @@ public class Main04
         {
             // This line asks the user for input by popping out a single window
             // with text input
-            inputWord = JOptionPane.showInputDialog(null, "Enter a word in all lower case:");
+            inputWord = JOptionPane.showInputDialog("Enter a word in all lower case:");
 
             if (inputWord.equals("STOP"))
                 System.exit(0);

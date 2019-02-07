@@ -1,43 +1,41 @@
-// Import the library containing the JOptionPane class
-import javax.swing.JOptionPane;
-
-public class Main04 
+class Main03
 {
     public static void main(String[] args) 
     {
-        // Hard-code the array
-        String[] wordArray = { "hello", "goodbye", "cat", "dog", "red", "green", "sun", "moon" };
-        String isOrIsNot = null, inputWord = null;
+        // Declare variables
+        float fahrenheit, centigrade;
 
-        // if the inputWord is contained within wordArray return true
-        while (true)
+        // Initialize variables
+        fahrenheit = 98.6f;
+        centigrade = convertToCentigrade(fahrenheit);
+
+        // Print out results
+        System.out.printf("Fahrenheit: %f\nCentigrade: %f\n", fahrenheit, centigrade);
+
+        // Use a for loop to print out 0.0, 5.0., ..., 40.0 to centigrade
+        for (float i = 0.0f; i <= 40.0f; i += 5.0f) 
         {
-            // This line asks the user for input by popping out a single window
-            // with text input
-            inputWord = JOptionPane.showInputDialog("Enter a word in all lower case:");
+            System.out.printf("%f ", convertToCentigrade(i));
+        }
 
-            if (inputWord.equals("STOP"))
-                System.exit(0);
-            else if (wordIsThere(inputWord, wordArray)) 
-                isOrIsNot = "is"; // set to is if the word is on the list
-            else
-                isOrIsNot = "is not"; // set to is not if the word is not on the list
+        System.out.println(); // To seperate the above output with the below
 
-            // Output to a JOptionPane window whether the word is on the list or not
-            JOptionPane.showMessageDialog(null, "The word " + inputWord + " " + isOrIsNot + " on the list.");
+        // Use a while loop to do the same as above
+        float i = 0.0f;
+        while (i <= 40.0f) 
+        {
+            System.out.printf("%f ", convertToCentigrade(i));
+            i += 5.0f;
         }
     }
 
-    public static boolean wordIsThere(String findMe, String[] theList) 
+    public static float convertToCentigrade(float f) 
     {
-        // Iterate through 'theList' and return true if the 
-        // target word matches the current word in 'theList'
-        for (int i = 0; i < theList.length; i++)
-            if (findMe.equals(theList[i]))
-                return true;
-        
-        // If we never returned true in the for-loop above, then
-        // we return false
-        return false;
-    } 
+        return (5.0f / 9.0f) * (f - 32.0f);
+    }
+
+    public static float convertToFahrenheit(float c) 
+    {
+        return c * (9.0f / 5.0f) + 32;
+    }
 }

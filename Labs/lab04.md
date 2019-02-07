@@ -5,7 +5,7 @@
 
 2. Open up PowerShell and `cd` into the root directory of `lab04`. 
 
-4. Open `lab04` with Notepad++ by clicking on the top left corner: File -> Open Folder as Workspace, and then find `lab04` in your `H:\` drive.
+4. Open `lab04` with Notepad++ by clicking on the top left corner: File -> Open Folder as Workspace, and then find `lab04`.
 
 5. Fill in the `wordIsThere()` method so that it returns true if the parameter `findMe` is in the String array `theList`.
 

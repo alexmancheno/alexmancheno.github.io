@@ -34,7 +34,7 @@ java -cp bin Main04
 
 14. To transfer `lab04` to your Mars account:
 ```
-scp -r ../lab03 <username>@mars.cs.qc.cuny.edu:~/
+scp -r ../lab04 <username>@mars.cs.qc.cuny.edu:~/
 ```
 
 15. To retrieve `lab04` from your Mars account from another machine (Mac or Windows):

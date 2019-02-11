@@ -28,5 +28,17 @@ Notice we are passing in `input05.txt` as an *argument* to our program! `input05
 
 9. Take a look at the last method in the bottom, `badFunc()`. The method compiles just fine, but a runtime error occurs if you call that method. What's wrong with the method?
 
+14. To transfer `lab05` to your Mars account:
+```
+scp -r ../lab05 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab05` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab05 ./
+```
+
+**Note**: This will place `lab05` where ever your PowerShell session currently is. 
+
 ## Solution
 To look at the answer for this lab, click <a href="/Misc/Solutions/Main05.java" target="_blank">here</a>.

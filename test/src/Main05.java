@@ -1,6 +1,7 @@
 // Import libraries from the JDK so we can use them throughout the program
 import javax.swing.JOptionPane;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main05 
 {
@@ -13,13 +14,14 @@ public class Main05
 
         /* Retrieve the input text filename from the parameter passed in 
          * when executing this program
-         * when running: java -cp bin Main05 input05.txt
-         * Note: input05.txt corresponds to args[0]!
+         * when running: java -cp bin Main05 lab05_input.txt
+         * Note: lab05_input.txt corresponds to args[0]!
          */
         file = args[0];
 
         // Use the static method from below to initialize our wordArray variable
         wordArray = inputFromFile(file);
+        System.out.println(Arrays.toString(wordArray));
 
         // This line asks the user for input by popping out a single window
         // with text input

@@ -1,87 +1,19 @@
 # Lab 05
-> Aim: File input and command line arguments
+> Aim: File input, arrays, and command line arguments
 
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab05.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab05
-└── src
-    ├── Main.java
-    ├── TextFileInput.java
-└── bin
-├── lab05_input.txt
-```
-You can do so by typing in the following into the PowerShell while in the root of your `H:\` drive:
-```
-> mkdir lab05
-> mkdir lab05/src
-> mkdir lab05/bin
-> New-Item -Name "lab05/src/Main.java" -ItemType "file"
-> New-Item -Name "lab05/src/TextFileInput.java" -ItemType "file"
-> New-Item -Name "lab05/lab05_input.txt"
-```
- 
-3. `cd` into your new project, `lab05`.
+2. Open up PowerShell and `cd` into the root directory of `lab05`. 
 
-4. Open `lab05` as part of your workspace with Notepad++. Place the following in `Main.java`:
+4. Open `lab05` with Notepad++ by clicking on the top left corner: File -> Open Folder as Workspace, and then find `lab05`.
 
-    ```
-    import javax.swing.*;
+4. Take a look at the source code in `TextFileInput.java`. On line 39, there's the single constructor of the class, which takes only a `String` as a parameter. This `String` represents the path to the file you want to read from. The method `readLine()` on line 76 returns a `String` representing a single line from the input text file. You'll need the constructor and `readLine()` to be able to read from a text file. 
 
-    public class Main 
-    {
-        public static void main(String[] args) 
-        {
-            String[] wordArray = { "hello", "goodbye", "cat", "dog", "red", "green", "sun", "moon" };
-            String isOrIsNot, inputWord;
+5. Fill in the `inputFromFile()` method so that it returns a *String* array of the words from the input file. You'll want to *create* an instance of `TextFileInput` and then use that instance to read from the input file, `input05.txt`.
 
-            // This line asks the user for input by popping out a single window
-            // with text input
-            inputWord = JOptionPane.showInputDialog(null, "Enter a word in all lower case:");
+    **Note**: `TextFileInput` won't tell you how many lines there are in the input text file, so then how do you know what size you need to initialize the String array you're returning? You don't need to know if you use an `ArrayList`!
 
-            // if the inputWord is contained within wordArray return true
-            if (wordIsThere(inputWord, wordArray)) 
-                isOrIsNot = "is"; // set to is if the word is on the list
-            else
-                isOrIsNot = "is not"; // set to is not if the word is not on the list
-
-            // Output to a JOptionPane window whether the word is on the list or not
-            JOptionPane.showMessageDialog(null, "The word " + inputWord + " " + isOrIsNot + " on the list.");
-        }
-
-        public static boolean wordIsThere(String findMe, String[] theList) 
-        {
-            for (int i = 0; i < theList.length; i++)
-            {
-                if (findMe.equals(theList[i]))
-                    return true;
-            }
-            return false;
-        }
-
-        public static String[] inputFromFile(TextFileInput input)
-        {
-            // TODO
-        } 
-    }
-    ```
-Place the following in `lab05_input.txt`:
-```
-hello
-goodbye
-cat
-dog
-red
-green
-sun
-moon
-```
-You can get the code for `TextFileInput.java` from either BlackBoard or <a href="/Misc/TextFileInput.java" target="_blank">here</a>.
-
-5. Fill in the `inputFromFile` method so that it returns a *String* array of the words from the input file.
-
-6. Use either the existing `wordArray` or create a *new* String array by using the `inputFromFile` method to do the same thing we did in `lab04`.
+6. Change the code so that the `wordArray` variable points to a `String` array of the words from `input05.txt` by using the `inputFromFile()`.
 
 7. Compile your code by running this from the **root** of `lab05`:
 ```
@@ -90,9 +22,15 @@ You can get the code for `TextFileInput.java` from either BlackBoard or <a href=
 
 8. Run your code:
 ```
-> java -cp bin Main lab05_input.txt
+> java -cp bin Main05 input05.txt
 ```
-Notice we are passing in `lab05_input.txt` as an *argument* to our program! `lab05_input.txt` corresponds to `args[0]` in our `main(String[] args)` method.
+Notice we are passing in `input05.txt` as an *argument* to our program! `input05.txt` corresponds to `args[0]` in our `main(String[] args)` method.
+
+    The program should run just like `lab04`!
+
+9. Fill in the `inputFromFileAlternative()` method that does the same thing as `inputFromFile()`, but without using `ArrayList`. Try writing the method it in such a way that it won't fail on any input size.
+
+9. Take a look at the last method in the bottom, `badFunc()`. The method compiles just fine, but a runtime error occurs if you call that method. What's wrong with the method?
 
 ## Solution
 To look at the answer for this lab, click <a href="/Misc/Solutions/Main05.java" target="_blank">here</a>.

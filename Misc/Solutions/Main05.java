@@ -105,7 +105,7 @@ public class Main05
 
     /* Q: What's wrong with this method?
      * A: The array is initialized to hold 4 variables, but only the first 3 are
-     * initialized to point to String objects. When i = 4 in the for-loop below,
+     * initialized to point to String objects. When i = 3 in the for-loop below,
      * the length() method gets called on the uninitialized variable, which
      * causes the runtime error (NullPointerException).
      */

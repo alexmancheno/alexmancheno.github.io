@@ -1,6 +1,5 @@
 
 // Import libraries from the JDK so we can use them throughout the program
-import javax.swing.JOptionPane;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -13,16 +12,6 @@ public class Main06
         TextFileInput input;
 
         // TODO
-    }
-
-    public static boolean wordIsThere(String findMe, String[] theList) 
-    {
-        for (int i = 0; i < theList.length; i++) 
-        {
-            if (findMe.equals(theList[i]))
-                return true;
-        }
-        return false;
     }
 
     public static int sum(int[] input)

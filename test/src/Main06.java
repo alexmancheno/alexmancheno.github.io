@@ -1,3 +1,4 @@
+
 // Import libraries from the JDK so we can use them throughout the program
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,6 +15,7 @@ public class Main06
         // Initialize our variables
         input = new TextFileInput(args[0]);
         inputArray = inputFromFile(input);
+
         
         System.out.printf("Before sorting: %s \n", Arrays.toString(inputArray));
         selectionSort(inputArray);
@@ -41,13 +43,12 @@ public class Main06
             line = input.readLine(); // read next line
         }
 
-        // Create an integer array from the 'helper' ArrayList and manually copy
-        // elements from the ArrayList to the integer array.
+        // Create an integer array from the 'helper' ArrayList
         int[] result = new int[helper.size()];
         for (int i = 0; i < helper.size(); i++)
             result[i] = helper.get(i);
 
-        // Finally, return the integer array
+        // Finally, return the converted integer array
         return result;
     }
 

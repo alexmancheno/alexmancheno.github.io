@@ -14,7 +14,7 @@
 
 8. Fill in the `sum()` and `average()` static methods.
 
-9. Fill in the `inputFromFile()` method. Notice that the return type is an *integer* array.
+9. Fill in the `inputFromFile()` so that it returns an integer array of the numbers read from `input06.txt`.
 
     **Note:**
     To convert a `String` to an `int`:
@@ -25,7 +25,7 @@
 
 10. Use the `selectionSort()` to sort the integer array that was read from `input06.txt`. 
 
-11. Fill in the `main()` method so that when the program runs, the following output appears as follows:
+11. Fill in the `main()` method so that when the program runs, the output appears as follows:
 ```
 Before sorting: [123, 75, 43, 221, 325, 6, 117, 763, 83, 785, 21, 775, 425, 647]
 After sorting: [6, 21, 43, 75, 83, 117, 123, 221, 325, 425, 647, 763, 775, 785]
@@ -35,7 +35,8 @@ Average: 314
 **Note**: You can use code like the following to get a `String` representation of an array:
 ```
 int[] array = {1, 2, 3};
-String s1 = Arrays.toString(array);
+String s = Arrays.toString(array);
+System.out.println(s) // prints: [1, 2, 3]
 ```
 
 10. Compile and run your program:

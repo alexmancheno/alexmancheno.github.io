@@ -1,4 +1,3 @@
-
 // Import libraries from the JDK so we can use them throughout the program
 import java.util.ArrayList;
 import java.util.Arrays;

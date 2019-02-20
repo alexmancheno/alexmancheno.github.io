@@ -1,14 +1,10 @@
 
 public class Main07 
 {
-
-    // Global static variable
-    public static int[][] myArray;
-
     public static void main(String[] args) 
     {
-        // Initialize the global static variable, 'myArray'
-        myArray = fillArray(args[0]);
+        // Declare and initialize 'myArray'
+        int[][] myArray = fillArray(args[0]);
         
         // Use methods to print out formatted output
         printArray(myArray);
@@ -16,18 +12,19 @@ public class Main07
         printArrayEven(myArray);
     }
 
-    private static void printArray(int[][] theArray) 
+    private static void printArray(int[][] array) 
     {
-        for (int i = 0; i < theArray.length; i++) 
+        for (int i = 0; i < array.length; i++) 
         {
-            for (int j = 0; j < theArray[i].length; j++)
-                System.out.printf("%d\t", theArray[i][j]); // '\t' is short for 'tab'
-
+            for (int j = 0; j < array[i].length; j++)
+            {
+                System.out.printf("%d\t", array[i][j]); // '\t' is the special char for 'tab'
+            }
             System.out.println(); // Go to next line after printing row                            
         }
     }
 
-    private static void printArrayEven(int[][] theArray) 
+    private static void printArrayEven(int[][] array) 
     {
         // TODO
     }

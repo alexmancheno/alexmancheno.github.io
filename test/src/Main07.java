@@ -5,13 +5,10 @@ import java.io.FileNotFoundException;
 
 public class Main07 
 {
-    // Global static variable
-    public static int[][] myArray;
-
     public static void main(String[] args) 
     {
-        // Initialize the global static variable, 'myArray'
-        myArray = fillArray(args[0]);
+        // Declare and initialize 'myArray'
+        int[][] myArray = fillArray(args[0]);
         
         // Use methods to print out formatted output
         printArray(myArray);
@@ -19,25 +16,27 @@ public class Main07
         printArrayEven(myArray);
     }
 
-    private static void printArray(int[][] theArray) 
-    {
-        for (int i = 0; i < theArray.length; i++) 
-        {
-            for (int j = 0; j < theArray[i].length; j++)
-                System.out.printf("%d\t", theArray[i][j]); // '\t' is short for 'tab'
 
+    private static void printArray(int[][] array) 
+    {
+        for (int i = 0; i < array.length; i++) 
+        {
+            for (int j = 0; j < array[i].length; j++)
+            {
+                System.out.printf("%d\t", array[i][j]); // '\t' is the special char for 'tab'
+            }
             System.out.println(); // Go to next line after printing row                            
         }
     }
 
-    private static void printArrayEven(int[][] theArray) 
+    private static void printArrayEven(int[][] array) 
     {
-        for (int i = 0; i < theArray.length; i++) 
+        for (int i = 0; i < array.length; i++) 
         {
-            for (int j = 0; j < theArray[i].length; j++) 
+            for (int j = 0; j < array[i].length; j++) 
             {
-                if (theArray[i][j] % 2 == 0) // Print out if the current element is even
-                    System.out.printf("%d\t", theArray[i][j]);
+                if (array[i][j] % 2 == 0) // Print out if the current element is even
+                    System.out.printf("%d\t", array[i][j]);
                 else
                     System.out.print("*\t");
             }
@@ -45,6 +44,7 @@ public class Main07
         }
     }
 
+    // Read file using TextFileInput
     private static int[][] fillArray(String myFile) 
     {
         // Declare and initialize TextFileInput variable, tfi
@@ -52,14 +52,13 @@ public class Main07
 
         // The first line to the input is # of rows, the second
         // line of the input is # of columns.
-        int row = Integer.parseInt(tfi.readLine());
-        int col = Integer.parseInt(tfi.readLine());
+        int row = Integer.parseInt(tfi.readLine()); // read first line
+        int col = Integer.parseInt(tfi.readLine()); // read second line
 
         // Declare and initialize an array of integer arrays 
         int[][] result = new int[row][];
 
-        // Initialize every element of 'result' as a new integer array. This part
-        // is necessary!
+        // Manually initialize every element of 'result' to point to a new integer array
         for (int i = 0; i < row; i++)
             result[i] = new int[col];
 
@@ -69,15 +68,16 @@ public class Main07
             for (int j = 0; j < col; j++) 
             {
                 // Use try-catch block try prevent the programming
-                // from halting if an exception is thrown by the
-                // Integer.parseInt() method
+                // from halting if an exception is thrown by the calling
+                // Integer.parseInt() with an invalid string
                 try 
                 {
                     result[i][j] = Integer.parseInt(tfi.readLine());
                 }
                 catch (NumberFormatException e)
                 {
-                    e.printStackTrace();
+                    result[i][j] = -1; // assign default value if there's an error converting string to int
+                    e.printStackTrace(); // print the stack of function calls leading to the error
                 }
             }
         }
@@ -101,6 +101,7 @@ public class Main07
         catch (FileNotFoundException e) 
         {
             e.printStackTrace();
+            return null; // there is no file to read from, so return null
         }
 
         // Get the number of rows and columns from input
@@ -110,8 +111,7 @@ public class Main07
         // Declare and initialize an array of integer arrays
         int[][] result = new int[row][];
 
-        // Initialize every element of 'result' as a new integer array. This part
-        // is necessary!
+        // Manually initialize every element of 'result' to point to a new integer array.
         for (int i = 0; i < row; i++)
             result[i] = new int[col];
 
@@ -124,6 +124,8 @@ public class Main07
                 result[i][j] = num;
             }
         }
+        // Close the reader before ending the function
+        reader.close();
 
         // Finally, return the result of filling in the array
         return result;

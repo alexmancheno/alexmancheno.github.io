@@ -1,38 +1,16 @@
 # Lab 08
 
-> Aim: StringTokenizers and two-dimensional arrays
+> Aim: StringTokenizer and two-dimensional arrays
 
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab08.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab08
-└── src
-    ├── Main08.java
-    ├── TextFileInput.java
-    ├── Tokens.java
-└── bin
-├── lab08input.txt
-├── animals.txt
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab08; mkdir lab08/src; mkdir lab08/bin; New-Item -Name "lab08/src/Main08.java" -ItemType "file"; New-Item -Name "lab08/src/TextFileInput.java" -ItemType "file"; New-Item -Name "lab08/src/Tokens.java" -ItemType "file"; New-Item -Name "lab08/lab08input.txt" -ItemType "file"; New-Item -Name "lab08/animals.txt" -ItemType "file"
-```
- 
-3. `cd` into your new project, `lab08`.
+2. Open up PowerShell and `cd` into the root directory of `lab08`. 
+
+3. Open `lab08` with Notepad++ by clicking on the top left corner: File -> Open Folder as Workspace, and then find `lab08`.
+
+4. `cd` into your new project, `lab08`.
 
 4. Open up `lab08` with Notepad++.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Main08.java" target="_blank">here</a> into `Main08.java`.
-
-6. Copy and paste the code from <a href="/Misc/Solutions/TextFileInput.java" target="_blank">here</a> into `TextFileInput.java`.
-
-7. Copy and paste the code from <a href="/Misc/Other/Tokens.java" target="_blank">here</a> into `Tokens.java`.
-
-8. Copy and paste the code from <a href="/Misc/Input/animals.txt" target="_blank">here</a> into `animals.txt`.
-
-9. Copy and paste the code from <a href="/Misc/Input/lab08input.txt" target="_blank">here</a> into `lab08input.txt`.
 
 10. Take a look at line 26 in `Tokens.java`. Here, we are now using another class, `StringTokenizer`, to be able to break up a line read from our `TextFileInput` object into *tokens*, where every token is a piece of the input string separated by the *delimiter*, ",". Documentation for `StringTokenizer` can be found [here](https://docs.oracle.com/javase/8/docs/api/java/util/StringTokenizer.html).
 
@@ -82,13 +60,10 @@ Creates the array:
 7    65  34  8
 19   56  9   27
 ```
-16. Compile your code:
+16. Compile and run your code:
 ```
 javac src/*.java -d bin
-```
-17. Run `Main08` and pass `lab08input.txt` as a parameter:
-```
-java -cp bin Main08 lab08input.txt
+java -cp bin Main08 input08.txt
 ```
 You should see the following output:
 ```
@@ -97,6 +72,18 @@ You should see the following output:
 9       27      19      56      33      82
 3       65      21      66      85      11
 ```
+
+14. To transfer `lab08` to your Mars account:
+```
+scp -r ../lab08 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab08` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab08 ./
+```
+
+**Note**: This will place `lab08` where ever your PowerShell session currently is. 
 
 ## Solution
 The completed code for this lab can be found <a href="/Misc/Solutions/Main08.java" target="_blank">here</a>.

@@ -1,20 +1,17 @@
 // Import libraries from the JDK so we can use them throughout the program
 import java.util.StringTokenizer;
-import 
 
 public class Main08 
 {
-    // Global static variable
-    public static int[][] myArray;
-
     public static void main(String[] args) 
     {
         // Initialize the global static variable, 'myArray'
-        myArray = fillArray(args[0]);
+        int[][] myArray = fillArray(args[0]);
 
         // Use methods to print out formatted output
         printArray(myArray);
     }
+
 
     private static void printArray(int[][] theArray) 
     {

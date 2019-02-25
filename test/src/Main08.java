@@ -54,31 +54,23 @@ public class Main08
 
         /* Note: You can also use the much shorter hand way of declaring and 
          * intialize a 2D array by the following:
-         * int[][] result = new int[rows][cols];
-         * They both do the same thing logically and physically
+         *  int[][] result = new int[rows][cols];
          */
 
         // Begin filling in the resulting array from the remainder of the input file
-        for (int i = 0; i < rows; i++)
+        line = input.readLine();
+        int i = 0, j = 0;
+        while (line != null)
         {
-            line = input.readLine(); // read the next line
             tokenizer = new StringTokenizer(line, delimiter);
-            for (int j = 0; j < cols; j++)  
+            while (tokenizer.hasMoreTokens())
             {
-                // Read a token from the current line
-                String token = tokenizer.nextToken();
-                
-                // Wrap the potentially problematic code with a try-catch block
-                try 
-                {
-                    int num = Integer.parseInt(token); // convert token to an integer
-                    result[i][j] = num;
-                } 
-                catch (NumberFormatException e)
-                {
-                    e.printStackTrace(); // prints the function calls leading up to the exception
-                }
+                result[i][j] = Integer.parseInt(tokenizer.nextToken());
+                j++;
             }
+            j = 0;
+            i++;
+            line = input.readLine();
         }
 
         // Finally, return the resulting 2D array after filling it

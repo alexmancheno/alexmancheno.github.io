@@ -23,7 +23,7 @@ This is a normal comment in Java
 
 /**
 This comment is javadoc, and will be included in separate
-HTML (web page) format when the Javadoc tool is run
+HTML (web page) format when the javadoc tool is run
 */
 ```
 
@@ -48,36 +48,37 @@ public static int countChars(String myFile, char myChar) {
 ```
 
 ## Working with Javadoc
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab10.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab10
-└── src
-    ├── Main10.java
-└── bin
-└── doc
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab10; mkdir lab10/src; mkdir lab10/bin; mkdir lab10/doc; New-Item -Name "lab10/src/Main10.java" -ItemType "file"
-```
- 
-3. `cd` into your new project, `lab10`.
+2. Open up PowerShell and `cd` into the root directory of `lab10`. 
+
+3. Open `lab10` with Notepad++ by clicking on the top left corner: File -> Open Folder as Workspace, and then find `lab10`.
+
+4. `cd` into your new project, `lab10`.
 
 4. Open up `lab10` with Notepad++.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Main10.java" target="_blank">here</a> into `Main10.java`.
 
 6. Notice that there's already Javadoc written for `fillMatrix()`. Use a combination of the `@return` and `@param` tags to write Javadoc for the rest of the methods in `Main10`.
 
 7. To generate Javadoc for your project, type in the following in the PowerShell while still in the root of `lab10`:
 ```
-> javadoc src/*.java -d doc
+javadoc src/*.java -d doc
 ```
 This command generates *Javadoc* for all the source code inside the `src` folder and places the output inside the `doc` folder. 
 
-8. Look inside the `doc` folder and find `index.html`. This HTML file is the *homepage* to your projects Javadoc. Open `index.html` by right clicking on `index.html` -> Open With -> Google Chrome (or whichever you prefer). This will open the HTML page showing the Javadoc you wrote for the project!
+8. Look inside the `doc` folder and find `index.html`. This HTML file is the *homepage* to your projects javadoc. Open `index.html` by right clicking on `index.html` -> Open With -> Google Chrome (or whichever you prefer). This will open the HTML page showing the Javadoc you wrote for the project!
+
+14. To transfer `lab10` to your Mars account:
+```
+scp -r ../lab10 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab10` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab10 ./
+```
+
+**Note**: This will place `lab10` where ever your PowerShell session currently is. 
 
 ## Solution
 The completed code for this lab can be found <a href="/Misc/Solutions/Main10.java" target="_blank">here</a>.

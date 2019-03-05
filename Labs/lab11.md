@@ -33,9 +33,8 @@ java -cp bin HelloWorldMore
 
 13. Fill in `showGui()` so that, once initialized, will *show* `Gui11` object to the screen.
 
-14. Fill in `printMatrix(input)` so that it will display to the gui the matrix to the `matrixDisplay` and the sum of the matrix to `sumDisplay` private instance variables.
+14. Fill in `printMatrix(input)` so that it will display to the gui the matrix to the `matrixDisplay` and the sum of the matrix to `sumDisplay` private instance variables. You can use `getMatrixString(input)` and `getSumString(input)` to help with this.
 **Hint:** you need to access the object's instance variables. 
-**Note:** putting all the logic for the `printMatrix(input)` method can make the method pretty large and hard to read. Try abstracting some of the logic to helper functions that constructs the string for `matrixDisplay` and the string for the `sumDisplay`.
 
 15. Finally, compile and run your code:
 ```

@@ -1,3 +1,4 @@
+
 import java.awt.GridLayout;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
@@ -68,4 +69,36 @@ class Gui11 extends JFrame
         // TODO
     }
 
+     // Get string representation of 2D matrix
+    private String getMatrixString(int[][] input)
+    {
+        // Building strings with the StringBuilder is much more efficient
+        // then concatenating strings! 
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < input.length; i++)
+        {
+            for (int j = 0; j < input[i].length; j++)
+            {
+                sb.append(Integer.toString(input[i][j]) + "\t");
+            }
+            sb.append("\n"); // append the linebreaker
+        }
+
+        // Finally, return the StringBuilder as a string
+        return sb.toString();
+    }
+
+    // Get string representation of the sum of matrix
+    private String getSumString(int[][] input)
+    {
+        int sum = 0;
+        for (int i = 0; i < input.length; i++)
+        {
+            for (int j = 0; j < input[i].length; j++)
+            {
+                sum += input[i][j];
+            }
+        }
+        return Integer.toString(sum);
+    }
 }

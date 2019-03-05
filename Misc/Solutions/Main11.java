@@ -1,4 +1,3 @@
-// Last updated: 10:30am at 10/3/18 (finished)
 import java.awt.GridLayout;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
@@ -9,7 +8,7 @@ public class Main11
 {
     public static void main(String[] args)
     {
-        // The array we want to display
+        // The array to display to gui
         int[][] array = {
             {1, 2, 3},
             {4, 5, 6},
@@ -53,7 +52,7 @@ class Gui11 extends JFrame
         this.scrollPane = new JScrollPane(this.matrixDisplay);
         this.sumDisplay = new JLabel("The sum of the matrix is:\n");
 
-        // Add this gui's instance variables to the main frame of the gui
+        // Add this gui's instance variables to the main content pane of the gui
         this.getContentPane().add(this.scrollPane);
         this.getContentPane().add(this.sumDisplay);
     }
@@ -67,13 +66,13 @@ class Gui11 extends JFrame
 
     public void printMatrix(int[][] input)
     {
-        // Get the formatted strings from the helper methods from below
+        // Get the formatted strings from the helper methods below
         String matrixString = getMatrixString(input);
         String sumString = getSumString(input);
 
         // Set the text to the displays with the text that's already there
         // concatenated with the matrix and sum strings
-        this.matrixDisplay.setText(this.matrixDisplay.getText() + matrixString);
+        this.matrixDisplay.append(matrixString);
         this.sumDisplay.setText(this.sumDisplay.getText() + sumString);
     }
 

@@ -22,5 +22,10 @@ public class Main14
 // Definition of a custom class
 class Money
 {
-    // TODO
+    // TODO - Declare instance variables here:
+
+    // TODO - Declare constructors here:
+
+    // TODO - Declare instance/static methods here:
+    
 }

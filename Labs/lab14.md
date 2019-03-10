@@ -1,26 +1,16 @@
 # Lab 14
 
-> Aim: Creating your own class, `Money`
+> Aim: Creating your own class, `Money`, and sorting `Money` objects
 
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab14.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab14
-└── src
-    ├── Main14.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab14; mkdir lab14/src; mkdir lab14/bin; New-Item -Name "lab14/src/Main14.java" -ItemType "file"
-```
+2. Open up PowerShell and `cd` into the root directory of `lab14`. 
+
+4. Open up `lab14` with Notepad++.
 
 3. `cd` into your new project, `lab14`.
 
 4. Open up `lab14` with Notepad++.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Main14.java" target="_blank">here</a> into `Main14.java`.
 
 6. Create a class called `Money`, where each object from this class has two integer instance variables: `dollars` and `cents`.
 
@@ -30,13 +20,12 @@ mkdir lab14; mkdir lab14/src; mkdir lab14/bin; New-Item -Name "lab14/src/Main14.
 
 9. Create a method, called `compareTo()`, which takes in a `Money` object. The method should return negative if the object the method is being called on is *less* than its parameter, return a positive number if it's greater than its parameter, or 0 if they're equal.
 
-10. *Override* the `equals()` method that `Money` inherits from `Object` (remember, every class inherits from `Object`). The overridden version should return **true** if the content of object the method is being called on is **equal** to its parameter's content. Return false otherwise.
+10. *Override* the `equals()` method that `Money` inherits from `Object` (remember, every class inherits from `Object`). The overridden version should return **true** if the *content* of object the method is being called on is **equal** to its parameter's content. Return false otherwise.
 
 11. *Override* the `toString()` method `Money` inherits from the `Object` class. The overridden version should return a string representation of a `Money` object. An example can be:
 ```
 $12.32
 ```
-
 12. Compile and run `Main14`. You should see the following output from the test cases in the `main()` method:
 ```
 m1: $0.00
@@ -49,7 +38,14 @@ m1.compareTo(m2): -6
 m2.compareTo(m4): -47
 m1.equals(m2): false
 ```
-
+14. To transfer `lab14` to your Mars account:
+```
+scp -r ../lab14 <username>@mars.cs.qc.cuny.edu:~/
+```
+15. To retrieve `lab14` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab14 ./
+```
 ### Bonus ###
 13. Use the `compareTo()` method from the class to write `selectionSort()`, which takes as its input a `Money` array and sorts from least to greatest.
 

@@ -68,3 +68,6 @@ after sorting: [$-3.32, $0.00, $6.05, $6.52]
 
 ## Solution
 The completed code for this lab can be found <a href="/Misc/Solutions/Main14.java" target="_blank">here</a>.
+
+## Example of passing parameters by value
+See if you can trace and understand the output of <a href="/Misc/Other/Main14_1.java" target="_blank">this program</a>.

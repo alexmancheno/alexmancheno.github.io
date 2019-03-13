@@ -2,34 +2,11 @@
 
 > Aim: Working with linked lists
 
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab16.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab16
-└── src
-    ├── Main16.java
-    ├── LinkedList.java
-    ├── Node.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab16; mkdir lab16/src; mkdir lab16/bin; New-Item -Name "lab16/src/Main16.java" -ItemType "file"; New-Item -Name "lab16/src/LinkedList.java" -ItemType "file"; New-Item -Name "lab16/src/Node.java" -ItemType "file" 
-```
-
-3. `cd` into your new project, `lab16`.
+2. Open up PowerShell and `cd` into the root directory of `lab16`. 
 
 4. Open up `lab16` with Notepad++.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Main16.java" target="_blank">here</a> into `Main16.java`.
-
-6. Copy and paste the code from <a href="/Misc/TODO/LinkedList.java" target="_blank">here</a> into `LinkedList.java`.
-
-7. Copy and paste the code from <a href="/Misc/Other/Node.java" target="_blank">here</a> into `Node.java`.
-
-8. `cd` into your new project, `lab16`.
-
 
 9. Open `Node.java`. Notice that the class has two private properties, `next` and `data`. This mean that each Node object has their own copies of these two variables. The first variable, `data`, stores a reference to a *string* object, and `next` stores a reference to *another* `Node` object!
 
@@ -78,6 +55,16 @@ Prepended 'd': (d)->(a)->(b)->(c)->null
 Appended  'e': (d)->(a)->(b)->(c)->(e)->null
 Prepended 'f': (f)->(d)->(a)->(b)->(c)->(e)->null
 Prepended 'g': (g)->(f)->(d)->(a)->(b)->(c)->(e)->null
+```
+
+14. To transfer `lab16` to your Mars account:
+```
+scp -r ../lab16 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab16` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab16 ./
 ```
 
 ## Solution

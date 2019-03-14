@@ -26,7 +26,7 @@
     **3) Set `head.next` to `newNode`:**<br><img src="svg/7.svg" alt="My Awesome SVG" style="height:180px"><br>
     **Note: If you're prepending the first node of the linked list (when `tail` == `head`), you need to set `tail` to the new node.** 
 
-14. Override the `toString()` method we inherit from the `Object` class. The method should return a string that looks like the following:
+14. Override the `toString()` method inherited from the `Object` class. The method should return a string that looks like the following:
 ```
 (A)->(B)->(C)->null
 ```

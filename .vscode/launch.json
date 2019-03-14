@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main16",
+            "request": "launch",
+            "mainClass": "Main16",
+            "projectName": "alexmancheno.github.io_9bedd92f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main26",
             "request": "launch",
             "cwd": "${workspaceFolder}",

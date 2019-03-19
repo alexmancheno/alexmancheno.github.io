@@ -45,7 +45,7 @@ public class LinkedList
 
         // If tail == head, then we need to move tail as well.
         // This only happens if linked list is empty
-        if (tail == head) tail = newNode;
+        if (this.tail == this.head) tail = newNode;
 
         // Increment the length property of this linked list
         this.length++;

@@ -20,7 +20,7 @@
   * [12](Labs/lab12.md)
   * [14](Labs/lab14.md)
   * [16](Labs/lab16.md)
-  <!-- * [17](Labs/lab17.md) -->
+  * [17](Labs/lab17.md)
   <!-- * [18](Labs/lab18.md) -->
   <!-- * [19](Labs/lab19.md) -->
   <!-- * [20](Labs/lab20.md) -->

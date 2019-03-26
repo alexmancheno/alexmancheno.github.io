@@ -17,30 +17,12 @@ public class SortedLinkedList
     }
 
     // Insert new data into the linked list in ascending order
-    public void insert(Money data)
+    public void insert(Money data) 
     {
-        // Create new node
-        Node n = new Node(data);
-
-        // Create iterator node
-        Node i = head;
-
-        // Look for the two spots we want to insert the new node between
-        while (i.next != null && data.compareTo(i.next.data) > 0)
-        {
-            i = i.next;
-        }
-
-        // Insert the new node between current node and the next node
-        n.next = i.next;
-        i.next = n;
-        this.length++;
-
-        // Check if we need to update tail as well
-        if (i == this.tail) this.tail = n;
+        // TODO
     }
 
-
+    
     // Override the toString method we inherit from class Object
     @Override
     public String toString()

@@ -1,7 +1,7 @@
 public class SortedLinkedList
 {
     // Internal nodes of linked list should be private so users of this class
-    // cannot make changes to this linked list that can break it
+    // cannot make grave changes to this linked list
     private Node head;
     private Node tail;
 

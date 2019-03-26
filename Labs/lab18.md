@@ -2,34 +2,11 @@
 
 > Aim: Inserting Money objects into a sorted linked list
 
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab18.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab18
-└── src
-    ├── Main18.java
-    ├── SortedLinkedList.java
-    ├── Node.java
-    ├── Money.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab18; mkdir lab18/src; mkdir lab18/bin; New-Item -Name "lab18/src/Main18.java" -ItemType "file"; New-Item -Name "lab18/src/SortedLinkedList.java" -ItemType "file"; New-Item -Name "lab18/src/Node.java" -ItemType "file"; New-Item -Name "lab18/src/Money.java" -ItemType "file"
-```
-
-3. `cd` into your new project, `lab18`.
+2. Open up PowerShell and `cd` into the root directory of `lab18`. 
 
 4. Open up `lab18` with Notepad++.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Main18.java" target="_blank">here</a> into `Main18.java`.
-
-6. Copy and paste the code from <a href="/Misc/TODO/SortedLinkedList.java" target="_blank">here</a> into `SortedLinkedList.java`.
-
-7. Copy and paste the code from <a href="/Misc/Other/Node.java" target="_blank">here</a> into `Node.java`.
-
-8. Copy and paste the code from <a href="/Misc/Other/Money.java" target="_blank">here</a> into `Money.java`.
 
 9. Now that `lab18` is set up, let's quickly review some bits of the classes we have worked with so far:<br>
 1) `Money` is a class where each of its objects contain two variables, `dollars` and `cents`. These two fields are used in the class's `compareTo()` method to help determine whether one `Money` object is either less than, equal to, or greater than another `Money` object.<br>
@@ -73,7 +50,15 @@ Inserting $4.50: ($2.44)->($3.99)->($4.50)->($6.01)->null
 Inserting $0.44: ($0.44)->($2.44)->($3.99)->($4.50)->($6.01)->null
 ```
 
+14. To transfer `lab18` to your Mars account:
+```
+scp -r ../lab18 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab18` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab18 ./
+```
+
 ## Solution
 The completed code for `SortedLinkedList.java` can be found <a href="/Misc/Solutions/Lab18/SortedLinkedList.java" target="_blank">here</a>.
-
-The completed code for `Node.java` can be found <a href="/Misc/Solutions/Lab18/Node.java" target="_blank">here</a>.

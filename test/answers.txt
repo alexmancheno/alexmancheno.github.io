@@ -1,26 +1,5 @@
-Alex Mancheno
-CS 381 - Data Analytics
-Mid-Term 1 (Excel Take-home answers)
-
-c. Based on MSE criteria, which of the two models above shows better performance over the training set?
-
-MSE stands for mean squared error, which the value is seen on cell D13 in both mdl1 and mdl2. The lower the number, the better the performance is with regards to the MSE criteria. Since mdl1 has a lower MSE, then mdl1 has better performance than mdl2.
-
-d. For an instance below, what will be housing price (y) using mdl1 and
-mdl2
-
-The values under the coffecient column in the third set is used to compute the equations.
-
-X1=4203, X2=1125, X3=0, X4=1, Y=?
-
-The equation to predict the housing price under mdl1:
-y = f(X1, X2, X3, X4) = -0.0838954923879227 * X1 + 2.12026824541062 * X2 - 8.3071247494917 * X3 - 18.2936126848182 * X4 + 125.671756905664
-
-housing price for f(4203, 1125, 0, 1) = 2140.0671658
-
-The equation to predict the housing price under mdl2:
-y = f(X1, X2) = -0.0845079185475582 * X1 + 2.12371734869953 * X2 + 102.333585899722
-
-the housing price for f(4203, 1125) = 2136.32882153
-
-
+1
+2
+3
+4
+5

@@ -22,7 +22,7 @@
   * [16](Labs/lab16.md)
   * [17](Labs/lab17.md)
   * [18](Labs/lab18.md)
-  <!-- * [19](Labs/lab19.md) -->
+  * [19](Labs/lab19.md)
   <!-- * [20](Labs/lab20.md) -->
   <!-- * [21](Labs/lab21.md) -->
   <!-- * [23](Labs/lab23.md) -->

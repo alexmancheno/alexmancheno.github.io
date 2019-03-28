@@ -27,8 +27,8 @@ public class FileMenuHandler implements ActionListener
         String menuName = event.getActionCommand();
         
 
-        if (menuName.equals("Open")) {
-            
+        if (menuName.equals("Open")) 
+        {
             // Create the object that will choose the file
             JFileChooser fc = new JFileChooser();
 
@@ -49,8 +49,11 @@ public class FileMenuHandler implements ActionListener
         } 
         else if (menuName.equals("Quit"))
         {
-            JOptionPane.showMessageDialog(null,"You clicked on Quit");
             System.exit(1);
+        }
+        else if (menuName.equals("Msg"))
+        {
+            JOptionPane.showMessageDialog(null, "You clicked on \'Msg\'");
         } 
     } 
 }

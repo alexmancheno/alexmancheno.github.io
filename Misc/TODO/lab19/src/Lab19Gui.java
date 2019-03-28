@@ -18,26 +18,22 @@ public class Lab19Gui extends JFrame
         this.setSize(200, 300);
         this.setLocation(400, 200);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    
+
         // Create file menu objects
         JMenuItem open = new JMenuItem("Open");
         JMenuItem quit = new JMenuItem("Quit");
-        JMenuItem msg = new JMenuItem("Msg");
         JMenuBar menuBar = new JMenuBar();
         JMenu fileMenu = new JMenu("File");
         FileMenuHandler fmh = new FileMenuHandler(this);
-        
-        // Add the action listener to the menu items 
+
+        // Add the action listener to the menu items
         open.addActionListener(fmh);
         quit.addActionListener(fmh);
-        msg.addActionListener(fmh);
-        
+
         // Add the menu items to the file menu
         fileMenu.add(open);
         fileMenu.addSeparator();
         fileMenu.add(quit);
-        fileMenu.addSeparator();
-        fileMenu.add(msg);
 
         // Add file menu to the menu bar, and set this gui's
         // menu bar to the menuBar we created above
@@ -45,7 +41,7 @@ public class Lab19Gui extends JFrame
         this.setJMenuBar(menuBar);
     }
 
-    public void displayGui() 
+    public void displayGui()
     {
         // Make the gui visible
         this.setVisible(true);

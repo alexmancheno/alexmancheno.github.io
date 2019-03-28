@@ -11,7 +11,7 @@ The following command creates a JAR file called `Project0.jar` and places the co
 jar cf Project0.jar -C src .
 ```
 
-## Extracting from an archive JAR file
+## Extracting from a JAR file
 To extract the contents of an archive JAR file, use the following template command:
 ```
 jar xf <project name>.jar 
@@ -49,10 +49,3 @@ Hello, from Library.java!
 123 + 456 = 579
 Result of Library.getGreeting("Alex"): Greetings to Alex
 ```
-
-## Extracting the contents of a JAR file
-This section may be useful if you want to double-check your projects before submission. Running the following will extract the contents of `App.jar` and place them where your terminal/command prompt window currently is:
-```
-jar xf App.jar
-```
-After running this command, you will see all the `.class` and `.java` files that we put into it from the previous guides.

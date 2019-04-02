@@ -23,7 +23,7 @@ public class Main20
             }
             finally
             {
-                System.out.println("Executing 'finally' block\n");
+                System.out.println("I print no matter what!\n");
             }
         }
     }

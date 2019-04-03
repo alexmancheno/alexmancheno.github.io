@@ -10,8 +10,11 @@ public class Main20
             int num = array[i];
             try
             {
-                System.out.printf("50 divided by %d is %f\n", num, divide(50, num));
-                System.out.printf("Square root of %d is %f\n", num, sqrt(num));
+                double a = divide(50, num);
+                System.out.printf("50 divided by %d is %f\n", num, a);
+    
+                double b = sqrt(num);
+                System.out.printf("Square root of %d is %f\n", num, b);
             }
             catch (myCheckedException e)
             {

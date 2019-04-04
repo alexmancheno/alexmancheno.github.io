@@ -81,7 +81,7 @@ class Node
 }
 ```
 Perhaps you might write a program using this class to create linked lists that store strings. But what if you needed your linked lists to store `String` or `Money` objects? Without generics, you would have to create a `Node` class for each of these types.<br><br>
-Generics allow your data structures (arrays, ArrayLists, LinkedLists, etc.) to be flexible in the kind of data they store. To use generics, use the `<>` operator to specify the kinds of data you're generic class will use. Example:
+Generics allow your data structures (arrays, ArrayLists, LinkedLists, etc.) to be flexible in the kind of data they store. To use generics, use the `<>` operator to specify the kinds of data your generic class will use. Example:
 ``` 
 class Node<T>
 {

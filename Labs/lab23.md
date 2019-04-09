@@ -35,23 +35,11 @@
 
 
 ## Practice
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab23.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab23
-└── src
-    ├── Main23.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab23; mkdir lab23/src; mkdir lab23/bin; New-Item -Name "lab23/src/Main23.java" -ItemType "file";
-```
+2. Open up PowerShell and `cd` into the root directory of `lab23`. 
 
-3. `cd` into your new project, `lab23`.
-
-4. Copy and paste the code from <a href="/Misc/TODO/Main23.java" target="_blank">here</a> into `Main23.java`.
+4. Open up `lab23` with Notepad++.
 
 5. Take a look at `Main23.java` and write a method called `isPalindromeRecursive()` that takes as its input a string and returns whether or not the input string is a palindrome.
 

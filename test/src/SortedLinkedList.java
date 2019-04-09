@@ -1,5 +1,3 @@
-// Last updated on 11/25/2018
-
 public class SortedLinkedList
 {
     // Internal nodes of linked list should be private so users of this class

@@ -2,6 +2,11 @@
 
 > Aim: Interfaces, generics, and SortedLinkedList of generic objects
 
+Here are some articles fromg geeksforgeeks.org that you can read:
+- [Interfaces In Java](https://www.geeksforgeeks.org/interfaces-in-java/)
+- [Generics in Java](https://www.geeksforgeeks.org/generics-in-java/)
+
+
 ## Interfaces
 Interfaces in Java are like *abstract classes*, except that all of its methods are abstract (methods that contain no bodies). Another difference is that variables in an interface are by default `final` and `static`. To have a class use an interface, you use the `implements` keyword rather than the `extends` keyword. Example:<br>
 ```
@@ -67,7 +72,7 @@ Interfaces are used when you want to achieve *abstraction* among classes that ar
 1. Interfaces summarize what the classes that implement the interface must do, but not how.
 2. If a class implements an interface but does not override every method, then that class must be abstract.
 3. You cannot create instances (objects) from an interface.
-4. A class can implement one or more interfaces, where a class an only extend from a single class.
+4. A class can implement one or more interfaces, where a class can only extend from a single class.
 5. All methods in an interface are public and abstract by default.
 6. All variables in an interface are public, static, and final by default.
 
@@ -109,8 +114,8 @@ Creating objects from this class would look like the following:
     Node<Money, String> node2 = new Node<Money, String>();
 ```
 **Here's a summary of some important advantages of generics:**
-1. Code reusability: you can write methods, classes, and interfaces once and use any type of data. 
-2. Type safety: generics make errors appear at compile time rather than runtime (which is harder to debug). Example:
+1. *Code reusability*: you can write methods, classes, and interfaces once and use any type of data. 
+2. *Type safety*: generics make errors appear at compile time rather than runtime (which is harder to debug). Example:
 ```
 List list = new ArrayList();
 list.add("hello");
@@ -122,7 +127,7 @@ List<String> list = new ArrayList<String>();
 list.add("hello");
 String s = list.get(0);   // no cast
 ```
-3. Implementing generic algorithms: you can write implementations of algorithms that work on any kind of data and still have type safety. Example:
+3. *Implementing generic algorithms*: you can write implementations of algorithms that work on any kind of data and still have type safety. Example:
 
 ```
 public static <T> void selectionSort(T[] input)
@@ -139,41 +144,11 @@ public static <T> T returnLargest(T[] input)
 ## Revisiting SortedLinkedList
 > Goal: make the Node and SortedLinkedList class from Lab 18 generic. 
 
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab21.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab21
-└── src
-    ├── Main21.java
-    ├── SortedLinkedList.java
-    ├── Node.java
-    ├── Money.java
-└── bin
-```
+2. Open up PowerShell and `cd` into the root directory of `lab21`. 
 
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab21; mkdir lab21/src; mkdir lab21/bin; New-Item -Name "lab21/src/Main21.java" -ItemType "file"; New-Item -Name "lab21/src/SortedLinkedList.java" -ItemType "file"; New-Item -Name "lab21/src/Node.java" -ItemType "file"; New-Item -Name "lab21/src/Money.java" -ItemType "file"
-```
-
-3. `cd` into your new project, `lab21`.
-
-4. Copy and paste the code from <a href="/Misc/TODO/Lab21/Main21.java" target="_blank">here</a> into `Main21.java`.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Lab21/SortedLinkedList.java" target="_blank">here</a> into `SortedLinkedList.java`.
-
-6. Copy and paste the code from <a href="/Misc/TODO/Lab21/Node.java" target="_blank">here</a> into `Node.java`.
-
-7. Copy and paste the code from <a href="/Misc/TODO/Lab21/Money.java" target="_blank">here</a> into `Money.java`.
-
-8. Open `Node.java` and use the `<>` operator to make the class generic.
-
-9. Open `SortedLinkedList.java` and use the `<>` operator to make the class generic.
-
-10. Open `Money.java` and *implement* the `Comparable` interface so that `Money` is also of type `Comparable`. You can read the documentation on `Comparable` right [here](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html).
-
-11. Open `Main21.java` and change the code there so that it properly uses `SortedLinkedList`.
+4. Open up `lab21` with Notepad++.
 
 12. Compile and run your code:
 ```
@@ -189,6 +164,23 @@ Inserting $3.99: ($2.44)->($3.99)->($6.01)->null
 Inserting $4.50: ($2.44)->($3.99)->($4.50)->($6.01)->null
 Inserting $0.44: ($0.44)->($2.44)->($3.99)->($4.50)->($6.01)->null
 ```
+
+12. Compile and run your program:
+```
+javac src/*.java -d bin
+java -cp bin Main21
+```
+
+14. To transfer `lab21` to your Mars account:
+```
+scp -r ../lab21 <username>@mars.cs.qc.cuny.edu:~/
+```
+
+15. To retrieve `lab21` from your Mars account from another machine (Mac or Windows):
+```
+scp -r <username>@mars.cs.qc.cuny.edu:~/lab21 ./
+```
+
 
 ## Solution
 The completed code for `SortedLinkedList.java` can be found <a href="/Misc/Solutions/Lab21/SortedLinkedList.java" target="_blank">here</a>.

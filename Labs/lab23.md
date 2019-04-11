@@ -45,7 +45,7 @@
 
 6. Write a method called `findMaxRecursive()` that takes as its input an integer array and returns the max numberfrom the input array. **Hint:** you need to write an *overloaded* version of `findMaxRecursive()` that takes as its input the array, current position in the array, and the current maximum of the array.
 
-7. Write a method called `sumOfDigits()` that tajes as its input a non-negative integer and returns the sum of every digit of that integer.
+7. Write a method called `sumOfDigits()` that takes as its input a non-negative integer and returns the sum of every digit of that integer.
 
 8. Compile and run your code:
 ```

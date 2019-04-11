@@ -3,7 +3,7 @@
 > Aim: More practice with recursion 
 
 ## Turning iterative algorithms into recursive ones
-1. In `lab23`, we went over how to approach recursive solutions by figuring out two things: 1) the base case(s) and 2) how to break the problem into smaller subpieces (the recursive calls). For today's lab, we'll look into coming up with solutions for algorithms that can be done iteratively, but *recursively* instead. 
+1. In `lab24`, we went over how to approach recursive solutions by figuring out two things: 1) the base case(s) and 2) how to break the problem into smaller subpieces (the recursive calls). For today's lab, we'll look into coming up with solutions for algorithms that can easily be done iteratively, but *recursively* instead. 
 
 2. Converting iterative algorithms into their recursive implementations can be done by doing the following:
     1. Identify the candidate loop. The loop should modify one or more scoped local variables, and then return a result based on their final values.
@@ -42,29 +42,11 @@
         ```
 
 ## Practice problems
-1. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab24.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab24
-└── src
-    ├── Main24.java
-    ├── Node.java
-    ├── SortedLinkedList.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab24; mkdir lab24/src; mkdir lab24/bin; New-Item -Name "lab24/src/Main24.java" -ItemType "file"; New-Item -Name "lab24/src/Node.java" -ItemType "file"; New-Item -Name "lab24/src/SortedLinkedList.java" -ItemType "file"
-```
+2. Open up PowerShell and `cd` into the root directory of `lab24`. 
 
-3. `cd` into your new project, `lab24`.
-
-4. Copy and paste the code from <a href="/Misc/TODO/Lab24/Main24.java" target="_blank">here</a> into `Main24.java`.
-
-5. Copy and paste the code from <a href="/Misc/TODO/Lab24/Node.java" target="_blank">here</a> into `Node.java`.
-
-6. Copy and paste the code from <a href="/Misc/TODO/Lab24/SortedLinkedList.java" target="_blank">here</a> into `SortedLinkedList.java`.
+4. Open up `lab24` with Notepad++.
 
 7. Fill in the instance method for `SortedLinkedList` called `printFirstToLast()` that takes no parameters and prints a linked list from the first element to the last element in the following format:
 ```

@@ -5,35 +5,17 @@
 ## The "Runner" Technique
 This technique is from [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1543421265&sr=8-1&keywords=cracking+the+coding+interview):
 
-**The "runner" (or second pointer) technique is used in many linked list problems. The runner technique means that you iterate through the linked list with two pointers simultaneously, with one ahead of the other. The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each
+**The "runner" (or fast pointer) technique is used in many linked list problems. The runner technique means that you iterate through the linked list with two pointers simultaneously, with one pointer iterating faster than the other pointer. The "fast" pointer might be ahead by a fixed amount, or it might be iterating past multiple nodes for each
 one node that the "slow" node iterates through.**
 
 ## Practice problems
-1. Let's get some practice in. Open up PowerShell and `cd` into your `H:\` drive.
+1. Download <a href="/Misc/TODO/lab25.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-2. Create the following folder structure:
-```
-lab25
-└── src
-    ├── Main25.java
-    ├── Node.java
-    ├── LinkedList.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab25; mkdir lab25/src; mkdir lab25/bin; New-Item -Name "lab25/src/Main25.java" -ItemType "file"; New-Item -Name "lab25/src/Node.java" -ItemType "file"; New-Item -Name "lab25/src/LinkedList.java" -ItemType "file"
-```
+2. Open up PowerShell and `cd` into the root directory of `lab25`. 
 
-3. `cd` into your new project, `lab25`.
+4. Open up `lab25` with Notepad++.
 
-4. Copy and paste the code from <a href="/Misc/TODO/lab25/Main25.java" target="_blank">here</a> into `Main25.java`.
-
-5. Copy and paste the code from <a href="/Misc/TODO/lab25/Node.java" target="_blank">here</a> into `Node.java`.
-
-6. Copy and paste the code from <a href="/Misc/TODO/lab25/LinkedList.java" target="_blank">here</a> into `LinkedList.java`.
-
-7. Fill in the static method for `LinkedList` called `equal()` which takes in two linked lists and returns whether they are equal. Two linked lists are equal if they have two distinct linked lists with equal content.
+7. Fill in the static method for `LinkedList` called `equal()` which takes in two linked lists and returns whether the two lists are equal. Two linked lists are equal if they have the same length and every adjacent pair of nodes contain equal data.
 
 8. Fill in the static method for `LinkedList` called `middleNode()` that takes in a linked list and returns the middle node of the linked list. If two nodes are middle nodes, return the second one.
 

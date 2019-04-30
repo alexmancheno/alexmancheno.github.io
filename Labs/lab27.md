@@ -39,20 +39,20 @@ TreeMap in java is an implementation of the [Map interface](https://docs.oracle.
     }
 ```
 
-Running the code will get you the following output:
-```
-Key value pairs:
-abb, 1
-abc, 2
-bbc, 3
-dbc, 4
+    Running the code will get you the following output:
+    ```
+    Key value pairs:
+    abb, 1
+    abc, 2
+    bbc, 3
+    dbc, 4
 
-Another way of iterating through keys:
-abb, 1
-abc, 2
-bbc, 3
-dbc, 4
-```
+    Another way of iterating through keys:
+    abb, 1
+    abc, 2
+    bbc, 3
+    dbc, 4
+    ```
 
 2. Having Keys implement the [Comparable](https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html) interface. The following example uses the [Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html) wrapper class for integer primitives. Notice that `Integer` implements `Comparable`. An example:
 ```
@@ -81,20 +81,20 @@ dbc, 4
     }
 ```
 
-Running the above code will get you the following output:
-```
-Key value pairs:
-1, One
-2, Three
-3, Two
-4, Three
+    Running the above code will get you the following output:
+    ```
+    Key value pairs:
+    1, One
+    2, Three
+    3, Two
+    4, Three
 
-Another way of iterating through keys:
-1, One
-2, Three
-3, Two
-4, Three
-```
+    Another way of iterating through keys:
+    1, One
+    2, Three
+    3, Two
+    4, Three
+    ```
 
 ## Binary Search Trees
 1. **A binary search tree is a data structure that consists of nodes with the following properties:**
@@ -120,24 +120,11 @@ Most methods written for a binary search tree are implemented recursively!
     }
 ```
 
-3. Let's practice with binary search trees! Create the following folder structure:
-```
-lab26
-└── src
-    ├── Main26.java
-    ├── BST.java
-└── bin
-```
-You can do so by entering in the following into the PowerShell while in the root of your `H:\` drive:
-```
-mkdir lab26; mkdir lab26/src; mkdir lab26/bin; New-Item -Name "lab26/src/Main26.java" -ItemType "file"; New-Item -Name "lab26/src/BST.java" -ItemType "file"
-```
+3. To practice with Binary Search Trees, download <a href="/Misc/TODO/lab27.zip" download>today's lab</a> and unzip it by right-clicking on the zipped folder and selecting "Extract all".
 
-4. `cd` into your new project, `lab26`.
+2. Open up PowerShell and `cd` into the root directory of `lab27`. 
 
-5. Copy and paste the code from <a href="/Misc/TODO/lab26/Main26.java" target="_blank">here</a> into `Main26.java`.
-
-6. Copy and paste the code from <a href="/Misc/TODO/lab26/BST.java" taBST="_blank">here</a> into `BST.java`
+4. Open up `lab27` with Notepad++.
 
 7. Fill in the `insert()` method. The method should insert an integer into the tree and maintain the properties of a binary search tree.
 
@@ -163,9 +150,8 @@ mkdir lab26; mkdir lab26/src; mkdir lab26/bin; New-Item -Name "lab26/src/Main26.
 13. Compile and run your code:
 ```
 javac src/*.java -d bin
-java -cp bin Main26
+java -cp bin Main27
 ```
-
 You should see the following output:
 ```
 Pre-order traversal: 3 2 1 6 5 8
@@ -177,10 +163,8 @@ Contains 5: true
 ```
 
 ## Solution
-The completed code for `BST.java` can be found <a href="/Misc/Solutions/Lab26/BST.java" target="_blank">here</a>.
+The completed code for `BST.java` can be found <a href="/Misc/Solutions/Lab27/BST.java" target="_blank">here</a>.
 
-The example for `TreeMap` using keys that implement the `Comparable` interface can be found <a href="/Misc/Solutions/Lab26/TreeMapExample1.java" target="_blank">here</a>.
+The example for `TreeMap` using keys that implement the `Comparable` interface can be found <a href="/Misc/Solutions/Lab27/TreeMapExample1.java" target="_blank">here</a>.
 
-The example for `TreeMap` a `Comparator` can be found <a href="/Misc/Solutions/Lab26/TreeMapExample2.java" target="_blank">here</a>.
-
-Download <a href="/Misc/Solutions/Test.zip" download>this</a>.
+The example for `TreeMap` a `Comparator` can be found <a href="/Misc/Solutions/Lab27/TreeMapExample2.java" target="_blank">here</a>.

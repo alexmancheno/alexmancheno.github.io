@@ -29,5 +29,5 @@
   * [24](Labs/lab24.md)
   * [25](Labs/lab25.md)
   * [26](Labs/lab26.md)
-  <!-- * [27](Labs/lab27.md) -->
+  * [27](Labs/lab27.md)
   <!-- * [Final Review](Labs/finalReview.md) -->

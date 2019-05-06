@@ -16,6 +16,7 @@
 1. The exam can be found <a href="/Misc/FinalReview/PracticeFinalB.pdf" target="_blank">here</a>.
 
 ## Potential topics to review
+* Make sure to review the quizzes on Blackboard. Some of the multiple choice questions on there appear on the final!
 * Classes and Objects
     * Difference between primitives and objects.
     * Difference between static and non-static variables and methods.

@@ -5,6 +5,8 @@
   * [Working with JAR files](Getting-Started/working-with-jar-files.md)
   * [Command-line reference](Getting-Started/command-line-reference.md)
   * [Resources](Getting-Started/Resources.md)
+* Projects
+  * [Project 4](Misc/Projects/Project4.md)
 
 * Labs
   * [01](Labs/lab01.md)
@@ -30,4 +32,4 @@
   * [25](Labs/lab25.md)
   * [26](Labs/lab26.md)
   * [27](Labs/lab27.md)
-  <!-- * [Final Review](Labs/finalReview.md) -->
+  * [Final Review](Labs/finalReview.md)

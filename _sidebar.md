@@ -1,13 +1,14 @@
 * Getting started
-
   * [Setting up Java](Getting-Started/setting-up-java.md)
   * [Creating and running a Java program](Getting-Started/running-a-java-program.md)
   * [Working with JAR files](Getting-Started/working-with-jar-files.md)
   * [Command-line reference](Getting-Started/command-line-reference.md)
   * [Resources](Getting-Started/Resources.md)
+* Career-related
+  * [Jobs/Internships](Misc/Jobs/jobs.md)
+  * [Interview prep resources](Misc/Jobs/prep.md)
 * Projects
   * [Project 4](Misc/Projects/Project4.md)
-
 * Labs
   * [01](Labs/lab01.md)
   * [02](Labs/lab02.md)
